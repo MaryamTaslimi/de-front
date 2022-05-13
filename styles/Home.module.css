@@ -3,7 +3,7 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 1000vh;
   padding: 4rem;
   flex: 1;
   display: flex;

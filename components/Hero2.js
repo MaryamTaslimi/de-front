@@ -1,39 +1,25 @@
-import '@lottiefiles/lottie-player';
-import {create} from '@lottiefiles/lottie-interactivity';
+import {ScrollRotate} from 'react-scroll-rotate';
+import Image from "next/image";
 import {useEffect, useRef} from "react";
 
 export default function Hero2() {
-    const ref = useRef();
+    const imageRef = useRef();
+
     useEffect(() => {
-        // 3. listen for player load. see lottie player repo for other events
-        this.ref.current.addEventListener('load', function (e) {
-            // 4. configure the interactivity library
-            create({
-                mode: 'scroll',
-                player: '#firstLottie',
-                actions: [
-                    {
-                        visibility: [0, 1],
-                        type: 'seek',
-                        frames: [0, 100],
-                    },
-                ],
+        window.addEventListener('scroll', event => {
+            requestAnimationFrame(() => {
+                const rotation = Math.log(window.pageYOffset) * 7;
+                imageRef.current.style.transform = `rotate(${rotation}deg)`;
             });
         });
     }, []);
-
     return (
-        <div className = "App">
-            <div style = {{height: '400px'}}/>
-            <lottie-player
-                ref = {this.ref} // 2. set the reference for the player
-                id = "firstLottie"
-                controls
-                mode = "normal"
-                src = "https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json"
-                style = {{width: '320px'}}
-            />
-        </div>
+        <img
+            ref = {imageRef}
+            src = "/gear.png"
+            className="w-auto"
+            alt = "Circles Icon"
+        />
     );
 }
 
