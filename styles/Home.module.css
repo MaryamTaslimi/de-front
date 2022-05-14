@@ -1,5 +1,5 @@
 .main {
-  /*min-height: 1000vh;*/
+  min-height: 1000vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -104,14 +104,11 @@
 }
 
 .gradientBg {
-  background: rgb(42,94,171);
-  background-image: -moz-linear-gradient(90deg, rgba(42,94,171,0), rgba(11,29,51,0.53)), url('/heroBg.png');
-  background-image: -webkit-linear-gradient(90deg, rgba(42,94,171,0), rgba(11,29,51,0.53)), url('/heroBg.png');
-  background-image: linear-gradient(90deg, rgba(42,94,171,0), rgba(11,29,51,0.53)), url('/heroBg.png');
-  min-height: 100vh;
-  background-position: center left;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: rgb(34,77,140);
+  background: -moz-linear-gradient(90deg, rgba(34,77,140,1) 0%, rgba(17,29,45,1) 53%);
+  background: -webkit-linear-gradient(90deg, rgba(34,77,140,1) 0%, rgba(17,29,45,1) 53%);
+  background: linear-gradient(90deg, rgba(34,77,140,1) 0%, rgba(17,29,45,1) 53%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#224d8c",endColorstr="#111d2d",GradientType=1);
 }
 
 @media (max-width: 600px) {
