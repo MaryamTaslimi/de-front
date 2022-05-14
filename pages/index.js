@@ -7,17 +7,17 @@ import Hero2 from "../components/Hero2";
 export default function Home() {
     return (
         <>
-            <Header/>
             <div className = {styles.gradientBg}>
                 <Head>
                     <title>خانه</title>
                     <meta name = "description" content = "مرکز فناوری دنیای اقتصاد"/>
                     <link rel = "icon" href = "/logo.png"/>
                 </Head>
-
-                <main className = {styles.main}>
+                <Header transparent = {true}/>
+                <main className = {styles.main + " static max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"}>
                     <Hero1/>
-                    <Hero2/>
+                    {/*<Hero2/>*/}
+
                 </main>
             </div>
 
