@@ -2,6 +2,8 @@ const navigation = [
     {name: 'سرمایه‌گذاران', href: '#'},
     {name: 'سرمایه‌پذیر', href: '#'},
     {name: 'شراکت استراتژیک', href: '#'},
+    {name: 'درباره ما', href: '#'},
+
 ]
 
 export default function Header({transparent}) {
@@ -29,7 +31,7 @@ export default function Header({transparent}) {
                     <div className="z-10">
                         <a
                             href = "#"
-                            className = "z-10 inline-block bg-accent py-2 px-10 border border-transparent rounded-md text-base font-extralight text-black hover:bg-opacity-75"
+                            className = "z-10 inline-block bg-accent py-2 px-10 border border-transparent rounded-sm text-base font-extralight text-black hover:bg-opacity-75"
                         >
                             همکاری با ما </a>
                     </div>

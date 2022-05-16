@@ -1,11 +1,11 @@
 import Header from "./Header";
 import HeroText from "./HeroText";
-import styles from "/styles/Hero.module.css"
+import styles from "/styles/Home.module.css"
 
 
 export default function Hero() {
     return (
-        <div className = {styles.container + " flex flex-col"}>
+        <div className = {styles.heroContainer + " flex flex-col"}>
             <Header transparent = {true}/>
             <div className = "py-12 px-6 sm:px-20">
                 <HeroText/>
