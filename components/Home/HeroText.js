@@ -7,7 +7,7 @@ export default function HeroText() {
             <div className = {" flex flex-col"}>
                 <p className = {styles.text1 + " text-[#C1C1C1] text-light text-5xl opacity-25 duration-700 ease-out"}>آینده،</p>
                 <div>
-                    <p className = {styles.old + " text-accent text-extralight text-5xl mt-10"}>از اینجا شروع
+                    <p className = {styles.old + " text-accent text-light text-5xl mt-10"}>از اینجا شروع
                         می‌شود...</p>
                     <p className = {styles.new + " opacity-0 text-accent text-light text-5xl -mt-12"}>از اینجا شروع
                         شد...</p>

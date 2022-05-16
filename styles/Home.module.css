@@ -24,9 +24,9 @@
 
 .gradientBg {
     background: rgb(34, 77, 140);
-    background: -moz-linear-gradient(90deg, rgba(34, 77, 140, 1) 0%, rgba(17, 29, 45, 1) 53%);
-    background: -webkit-linear-gradient(90deg, rgba(34, 77, 140, 1) 0%, rgba(17, 29, 45, 1) 53%);
-    background: linear-gradient(90deg, rgba(34, 77, 140, 1) 0%, rgba(17, 29, 45, 1) 53%);
+    background: -moz-linear-gradient(90deg, rgba(16, 73, 133, 1) 0%, rgba(0, 0, 0, 1) 85%);
+    background: -webkit-linear-gradient(90deg, rgba(16, 73, 133, 1) 0%, rgba(0, 0, 0, 1) 85%);
+    background: linear-gradient(90deg, rgba(16, 73, 133, 1) 0%, rgba(0, 0, 0, 1) 85%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#224d8c", endColorstr="#111d2d", GradientType=1);
 }
 

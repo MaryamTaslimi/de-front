@@ -1,15 +1,13 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Gear from "../components/Gear";
-import Chevron from "../components/Chevron";
-import Hero from "../components/Hero";
-import Introduction from "../components/Introduction";
-import InfoBox from "../components/InfoBox";
-import ServicesBox from "../components/ServicesBox";
-import FormContainer from "../components/FormContainer";
-import FAQ from "../components/FAQ";
-import PartnersCarousel from "../components/PartnersCarousel";
-import MainForm from "../components/MainForm";
+import Gear from "../components/Home/Gear";
+import Chevron from "../components/Home/Chevron";
+import Hero from "../components/Home/Hero";
+import Introduction from "../components/Home/Introduction";
+import InfoBox from "../components/Home/InfoBox";
+import ServicesBox from "../components/Home/ServicesBox";
+import FormContainer from "../components/Home/FormContainer";
+
 
 
 export default function Home() {
@@ -37,8 +35,8 @@ export default function Home() {
                             <InfoBox/>
                         </div>
                         <ServicesBox/>
-                        <MainForm/>
                     </div>
+                    <FormContainer/>
                 </main>
 
             </div>

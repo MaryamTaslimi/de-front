@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 
 export default function PartnersCarousel() {
     const items = [
@@ -15,8 +15,8 @@ export default function PartnersCarousel() {
     return (
 
         <div className = {"flex flex-col justify-center items-center z-10"}>
-            <div className = {styles.gradientBg + " w-[80vw] overflow-x-scroll px-12 py-6"}>
-                <div className = {"flex flex-row gap-24 whitespace-nowrap w-[100vw]"}>
+            <div className = {styles.gradientBg + " max-w-6xl overflow-x-scroll px-12 py-6"}>
+                <div className = {"flex flex-row gap-24 whitespace-nowrap px-6"}>
                     {items.map((item) => (
                         <div key = {item.name}
                              className = {"w-24 flex flex-col justify-end items-center gap-4 inline-block"}>
@@ -31,17 +31,3 @@ export default function PartnersCarousel() {
     );
 }
 
-
-//
-// <div className={"flex flex-col justify-center items-center mt-16"}>
-//     <div className={"w-[500px] overflow-scroll"}>
-//         <div className = {"flex flex-row-reverse px-3 gap-8 whitespace-nowrap w-[100vw]"}>
-//             {items.map((item) => (
-//                 <div key = {item.name} className = {" flex flex-col justify-center items-center gap-4 inline-block"}>
-//                     <img src = {item.src} className = {"h-32"}/>
-//                     <p className = {" text-white font-light text-base"}>{item.name}</p>
-//                 </div>
-//             ))}
-//         </div>
-//     </div>
-// </div>

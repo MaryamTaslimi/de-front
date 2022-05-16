@@ -1,4 +1,4 @@
-import InfoItem from "../components/InfoItem";
+import InfoItem from "./InfoItem";
 import CountUpItem from "./CountUpItem";
 
 export default function InfoBox() {
