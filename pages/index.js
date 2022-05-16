@@ -7,7 +7,10 @@ import Introduction from "../components/Home/Introduction";
 import InfoBox from "../components/Home/InfoBox";
 import ServicesBox from "../components/Home/ServicesBox";
 import FormContainer from "../components/Home/FormContainer";
-
+import Partners from "../components/Home/Partners";
+import Image from "next/image";
+import FAQ from "../components/Home/FAQ";
+import Footer from "../components/Home/Footer";
 
 
 export default function Home() {
@@ -20,7 +23,7 @@ export default function Home() {
                     <link rel = "icon" href = "/logo.png"/>
                 </Head>
                 <Hero/>
-                <main className = {styles.main +" relative"}>
+                <main className = {styles.main + " relative"}>
                     <div className = {"py-12 px-6 sm:px-20"}>
                         <a href = {"#InfoBox"}>
                             <Chevron/>
@@ -37,7 +40,10 @@ export default function Home() {
                         <ServicesBox/>
                     </div>
                     <FormContainer/>
+                    <Partners/>
+                    <FAQ/>
                 </main>
+                <Footer/>
 
             </div>
 
