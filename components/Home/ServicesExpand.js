@@ -31,15 +31,29 @@ const accentItem = [
 export default function ServicesExpandable() {
     return (
         <div>
-            <div className = {"flex justify-center items-center"}>
+            <div className = {"flex justify-center items-center mt-56"}>
                 <HoveringDiamond/>
             </div>
-            <div className = {"grid grid-cols-2 grid-rows-2 gap-24"}>
-                {
-                    primaryItems.map(primaryItem => (
-                        <ExpandableItem key={primaryItem.title} title={primaryItem.title} body={primaryItem.body} src={"/diamond-primary.png"}/>
-                    ))
-                }
+            <div className = {"grid grid-cols-3 place-items-stretch justify-items-center"}>
+
+                <ExpandableItem title = {primaryItems[0].title} body = {primaryItems[0].body}
+                                src = {"/diamond-primary.png"}/>
+                <div className = {"z-10 border-x border-primary opacity-50"}/>
+                <ExpandableItem key = {primaryItems[1].title} title = {primaryItems[1].title}
+                                body = {primaryItems[1].body} src = {"/diamond-primary.png"}/>
+                <div className = {"z-10 border-x h-24 border-primary opacity-50"}/>
+                <div className = {"z-10 border-x h-24 border-primary opacity-50"}/>
+                <div className = {"z-10 border-x h-24 border-primary opacity-50"}/>
+                <ExpandableItem key = {primaryItems[2].title} title = {primaryItems[2].title}
+                                body = {primaryItems[2].body} src = {"/diamond-primary.png"}/>
+                <div className = {"z-10 border-x border-primary opacity-50"}/>
+
+                <ExpandableItem key = {primaryItems[3].title} title = {primaryItems[3].title}
+                                body = {primaryItems[3].body} src = {"/diamond-primary.png"}/>
+            </div>
+            <div className = {"flex justify-center items-center"}>
+                <ExpandableItem key = {accentItem[0].title} title = {accentItem[0].title}
+                                body = {accentItem[0].body} src = {"/diamond-accent.png"}/>
             </div>
         </div>
     )
