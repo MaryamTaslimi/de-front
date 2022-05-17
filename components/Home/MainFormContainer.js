@@ -4,7 +4,7 @@ import styles from "/styles/Home.module.css"
 import MainForm from "./MainForm";
 
 
-export default function FormContainer() {
+export default function MainFormContainer() {
     return (
         <div>
             <div className = {styles.formContainer + " flex items-end justify-center pb-24"}>

@@ -1,17 +1,14 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Gear from "../components/Home/Gear";
-import Chevron from "../components/Home/Chevron";
 import Hero from "../components/Home/Hero";
 import Introduction from "../components/Home/Introduction";
 import InfoBox from "../components/Home/InfoBox";
 import ServicesBox from "../components/Home/ServicesBox";
-import FormContainer from "../components/Home/FormContainer";
+import MainFormContainer from "../components/Home/MainFormContainer";
 import Partners from "../components/Home/Partners";
-import Image from "next/image";
 import FAQ from "../components/Home/FAQ";
 import Footer from "../components/Home/Footer";
-import ExpandableItem from "../components/Home/ExpandableItem";
 import ServicesExpandable from "../components/Home/ServicesExpand";
 
 
@@ -38,7 +35,7 @@ export default function Home() {
                         <ServicesExpandable/>
 
                     </div>
-                    <FormContainer/>
+                    <MainFormContainer/>
                     <Partners/>
                     <FAQ/>
                 </main>

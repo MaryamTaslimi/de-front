@@ -17,21 +17,29 @@ export default function Contact() {
                 <p className = {"text-white text-2xl font-light"}>ارتباط با ما</p>
                 <div className = {"flex flex-row items-center"}>
                     <LocalPhoneSharpIcon className = {"text-white ml-4"}/>
-                    <p dir = {"ltr"} className = {"text-base font-light text-white"}>۰۲۱ - ۸۷۷۶۲۷۴۳</p>
+                    <a
+                        dir = {"ltr"}
+                        className = {"text-base font-light text-white"}
+                        href = {"tel:02187762743"}
+                    >۰۲۱ - ۸۷۷۶۲۷۴۳</a>
                 </div>
                 <div className = {"flex flex-row items-center"}>
                     <WhatsappSharpIcon className = {"text-white ml-4"}/>
-                    <p dir = {"ltr"} className = {"text-base font-light text-white"}>۰۹۳۸ ۶۱۵۷ ۵۷۰۳</p>
+                    <a
+                        dir = {"ltr"}
+                        className = {"text-base font-light text-white"}
+                        href = {"https://wa.me/093861575703"}
+                    >۰۹۳۸ ۶۱۵۷ ۵۷۰۳</a>
                 </div>
                 <div className = {"flex flex-row items-center"}>
                     <AlternateEmailSharpIcon className = {"text-white ml-4"}/>
                     <div className = {"flex flex-col gap-4"}>
-                        <a dir = {""}
-                           className = {"text-base font-light text-white underline underline-offset-4 decoration-solid"}
-                           href = "mailto:info@de.com">info@de.com</a>
-                        <a dir = {""}
-                           className = {"text-base font-light text-white underline underline-offset-4 decoration-solid"}
-                           href = "mailto:Deic.vc.email@gmail.com">Deic.vc.email@gmail.com</a>
+                        <a
+                            className = {"text-base font-light text-white underline underline-offset-4 decoration-solid"}
+                            href = "mailto:info@de.com">info@de.com</a>
+                        <a
+                            className = {"text-base font-light text-white underline underline-offset-4 decoration-solid"}
+                            href = "mailto:Deic.vc.email@gmail.com">Deic.vc.email@gmail.com</a>
                     </div>
                 </div>
                 <div className = {"flex flex-row items-center"}>

@@ -2,7 +2,7 @@ const navigation = [
     {name: 'سرمایه‌گذاران', href: '#'},
     {name: 'سرمایه‌پذیر', href: '#'},
     {name: 'شراکت استراتژیک', href: '#'},
-    {name: 'درباره ما', href: '#'},
+    {name: 'درباره ما', href: '/about-us'},
 
 ]
 
