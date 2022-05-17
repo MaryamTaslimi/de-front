@@ -75,7 +75,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.accentText{
+.accentText {
     -webkit-text-fill-color: #FFCC29;
 }
 
@@ -90,11 +90,13 @@
     background-position: center center;
 }
 
-.diamondWhite:hover + p{
-    opacity:1;
+.diamondWhite:hover + div {
+    opacity: 1;
     filter: none;
-    transform: translateX(-5rem) translateY(3rem);
+    transform: translateX(-28rem) translateY(7rem);
 }
 
-
+.diamondWhite:hover p {
+    opacity: 0;
+}
 
