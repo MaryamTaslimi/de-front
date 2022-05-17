@@ -4,23 +4,6 @@
     flex-direction: column;
 }
 
-.footer {
-    display: flex;
-    flex: 1;
-    padding: 2rem 0;
-    border-top: 1px solid #eaeaea;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-
-
 .gradientBg {
     background: rgb(34, 77, 140);
     background: -moz-linear-gradient(90deg, rgba(16, 73, 133, 1) 0%, rgba(0, 0, 0, 1) 85%);
@@ -99,6 +82,19 @@
 
 .formIcon {
     position: absolute;
+}
+
+.diamondWhite {
+    background-image: url('/diamond-accent.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.diamondWhite:hover + p{
+    opacity:1;
+    filter: none;
+    transform: translateX(-5rem) translateY(3rem);
 }
 
 

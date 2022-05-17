@@ -11,6 +11,7 @@ import Partners from "../components/Home/Partners";
 import Image from "next/image";
 import FAQ from "../components/Home/FAQ";
 import Footer from "../components/Home/Footer";
+import Expandable from "../components/Home/Expandable";
 
 
 export default function Home() {
@@ -25,10 +26,7 @@ export default function Home() {
                 <Hero/>
                 <main className = {styles.main + " relative"}>
                     <div className = {"py-12 px-6 sm:px-20"}>
-                        <a href = {"#InfoBox"}>
-                            <Chevron/>
-                            <Chevron/>
-                        </a>
+
 
                         <Gear top = {"top-0"} x = {"left-[0]"} size = {"w-[40rem]"}/>
                         <Gear top = {"top-[37rem]"} x = {"-left-[10rem]"} size = {"w-[30rem]"}/>
@@ -42,6 +40,7 @@ export default function Home() {
                     <FormContainer/>
                     <Partners/>
                     <FAQ/>
+                    <Expandable/>
                 </main>
                 <Footer/>
 
