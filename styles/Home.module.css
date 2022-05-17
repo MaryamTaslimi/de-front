@@ -83,14 +83,4 @@
     position: absolute;
 }
 
-/*.diamondWhite {*/
-/*    background-image: url('/diamond-accent.png');*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*    background-position: center center;*/
-/*}*/
-
-.diamondWhite:hover ~ p {
-    opacity: 0;
-}
 

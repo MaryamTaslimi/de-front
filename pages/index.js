@@ -11,7 +11,8 @@ import Partners from "../components/Home/Partners";
 import Image from "next/image";
 import FAQ from "../components/Home/FAQ";
 import Footer from "../components/Home/Footer";
-import Expandable from "../components/Home/Expandable";
+import ExpandableItem from "../components/Home/ExpandableItem";
+import ServicesExpandable from "../components/Home/ServicesExpand";
 
 
 export default function Home() {
@@ -36,7 +37,7 @@ export default function Home() {
                             <InfoBox/>
                         </div>
                         <ServicesBox/>
-                        <Expandable/>
+                        <ServicesExpandable/>
 
                     </div>
                     <FormContainer/>
