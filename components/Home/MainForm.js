@@ -3,6 +3,8 @@ import WorkSharpIcon from '@mui/icons-material/WorkSharp';
 import ContactPhoneSharpIcon from '@mui/icons-material/ContactPhoneSharp';
 import EmailSharpIcon from '@mui/icons-material/EmailSharp';
 import {useState} from "react";
+import {apiRoutes} from "../../utils/const";
+import axios from "axios";
 
 
 export default function MainForm() {
@@ -10,11 +12,34 @@ export default function MainForm() {
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
     const [workArea, setWorkArea] = useState("");
+
+    const submitForm = () => {
+        axios.post(apiRoutes.baseURL + apiRoutes.mainForm, {
+            "name": name,
+            "phone": phone,
+            "email": email,
+            "workArea": workArea
+        }, {
+            headers: {
+                "Content-Type": "application/json",
+            },
+            withCredentials: true
+        })
+            .then(function (response) {
+                console.log(response.data);
+            })
+            .catch(function (error) {
+                console.log(error);
+                return false;
+            })
+    }
+
     return (
         <div className = "w-full max-w-lg bg-shades-10 rounded-sm border-2 border-form-grey">
             <p className = {"bg-accent text-center text-shades-100 text-2xl text-light py-4 px-8"}>ثبت نام</p>
             <div className = {"px-8"}>
-                <p className = {"text-shades-80 text-justify text-base text-light my-6"}>ما همراه گروه های مختلفی از بازیگران
+                <p className = {"text-shades-80 text-justify text-base text-light my-6"}>ما همراه گروه های مختلفی از
+                    بازیگران
                     صنعت در زمینه‌های مختلف همکاری و پروژه های مشترک داریم.
                     <br/>
                     برای آنکه مسیر همکاری مشترکمان هموارتر شود,میتوانید فرم زیر را پر کنید و منتظر مشاوره تخصصی و رایگان
@@ -144,7 +169,11 @@ export default function MainForm() {
                     <div className = "flex items-center justify-center my-8">
                         <button
                             className = "bg-accent text-shades-100 font-light py-2 px-12 rounded-sm focus:outline-none"
-                            type = "button">
+                            type = "button"
+                            onClick = {() => {
+                                submitForm()
+                            }}
+                        >
                             ثبت نام
                         </button>
                     </div>

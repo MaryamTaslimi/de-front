@@ -30,8 +30,8 @@ const accentItem = [
 
 export default function ServicesExpandable() {
     return (
-        <div>
-            <div className = {"flex justify-center items-center mt-56"}>
+        <div className={"flex flex-col justify-center items-center"}>
+            <div className = {" max-w-7xl flex justify-center items-center mt-56"}>
                 <HoveringDiamond/>
             </div>
             <div className = {"grid grid-cols-3 place-items-stretch justify-items-center"}>
