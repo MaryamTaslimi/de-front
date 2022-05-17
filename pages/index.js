@@ -36,11 +36,12 @@ export default function Home() {
                             <InfoBox/>
                         </div>
                         <ServicesBox/>
+                        <Expandable/>
+
                     </div>
                     <FormContainer/>
                     <Partners/>
                     <FAQ/>
-                    <Expandable/>
                 </main>
                 <Footer/>
 

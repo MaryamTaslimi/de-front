@@ -8,7 +8,7 @@ export default function FormContainer() {
     return (
         <div>
             <div className = {styles.formContainer + " flex items-end justify-center pb-24"}>
-                <div className = {" max-w-6xl flex flex-row justify-between items-center gap-8"}>
+                <div className = {" max-w-7xl flex flex-row justify-between items-center gap-8"}>
                     <div className = {" flex flex-row"}>
                         <img src = {"hexagonal-form.png"} className = {"h-96 ml-6"} alt = {"hexagonal-form"}/>
                         <div className = {"flex flex-col"}>

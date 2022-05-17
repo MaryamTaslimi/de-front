@@ -15,7 +15,7 @@ export default function PartnersCarousel() {
     return (
 
         <div className = {"flex flex-col justify-center items-center z-10"}>
-            <div className = {styles.gradientBg + " max-w-6xl overflow-x-scroll px-12 py-6"}>
+            <div className = {styles.gradientBg + " max-w-7xl overflow-x-scroll px-12 py-6"}>
                 <div className = {"flex flex-row gap-24 whitespace-nowrap px-6"}>
                     {items.map((item) => (
                         <div key = {item.name}

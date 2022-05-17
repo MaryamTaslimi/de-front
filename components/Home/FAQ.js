@@ -32,13 +32,13 @@ const items = [
 
 export default function FAQ() {
     return (
-        <div className = {"flex flex-col bg-shades-10 justify-center items-center py-16 mb-20"}>
+        <div className = {"flex flex-col bg-shades-10 justify-center items-center py-16 my-20"}>
             <div>
                 <div className = {"border-b-2 border-[#E5E5E5]"}>
                     <p className = {"text-primary text-4xl font-light mb-4"}>سوالات پرتکرار</p>
                 </div>
                 <div
-                    className = {"grid grid-cols-1 md:grid-cols-2 gap-8 place-content-evenly justify-items-center place-items-center"}>
+                    className = {"max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center"}>
                     {
                         items.map(item => (
                             <AccordionItem key = {item.question} question = {item.question} answer = {item.answer}/>
