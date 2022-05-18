@@ -1,4 +1,4 @@
-// import styles from "../styles/About.module.css";
+// import styles from "../styles/about.module.css";
 //
 // <h1 className = {styles.title}>
 //     Welcome to <a href = "https://nextjs.org">Next.js!</a>

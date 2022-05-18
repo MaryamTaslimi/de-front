@@ -1,7 +1,7 @@
-import Header from "./Header";
+import Header from "../Common/Header";
 import HeroText from "./HeroText";
 import styles from "/styles/Home.module.css"
-import Chevron from "./Chevron";
+import Chevron from "../Common/Chevron";
 
 
 export default function Hero() {

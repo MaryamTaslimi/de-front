@@ -17,7 +17,7 @@ export default function Mission() {
         <div className = {"flex flex-col"}>
             <div
                 className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6 mb-8"}>
-                <img src = {"/About/mission.png"} className = {"brightness-0 invert w-16"}/>
+                <img src = {"/about/mission.png"} className = {"brightness-0 invert w-16"}/>
                 <p className = {"text-justify font-light text-shades-10 text-4xl"}>ماموریت</p>
             </div>
             <div className = {"flex flex-col gap-16"}>
@@ -30,14 +30,11 @@ export default function Mission() {
 
                 <div className = {"flex flex-row justify-start gap-52"}>
                     <MissionStack
-                        title = {<p><span className = {"text-accent"}>خدمات مختلفی</span> که در این راستا ارائه می‌شود
-                            شامل:
-                        </p>} bodyItems = {stack1}/>
+                        title = {1} bodyItems = {stack1}/>
 
                     <MissionStack
-                        title = {<p>خدمات تخصصی این مرکز برای<span className = {"text-accent"}> ۳ گروه هدف</span> طراحی
-                            شده است:
-                        </p>} bodyItems = {stack2}/>
+                        title = {2}
+                        bodyItems = {stack2}/>
                 </div>
 
                 <p className = {"text-justify font-light text-shades-20 text-lg"}>

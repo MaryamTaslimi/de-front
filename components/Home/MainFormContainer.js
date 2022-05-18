@@ -1,5 +1,3 @@
-import Header from "./Header";
-import HeroText from "./HeroText";
 import styles from "/styles/Home.module.css"
 import MainForm from "./MainForm";
 

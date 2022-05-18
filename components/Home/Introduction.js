@@ -5,7 +5,7 @@ export default function Introduction() {
     return (
         <div>
             <div className = {"flex flex-row items-center border-b border-shades-60 pb-4 mb-4 w-3/5"}>
-                <img src = {"/logo.png"} alt = {"logo"} className = {"w-16"}/>
+                <img src = {"/common/logo.png"} alt = {"logo"} className = {"w-16"}/>
                 <p className = {"text-4xl font-light text-white mr-4"}>مرکز نوآوری و کسب و کار دنیای اقتصاد </p>
             </div>
             <div className = {"flex flex-row w-3/5"}>

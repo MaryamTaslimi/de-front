@@ -56,14 +56,14 @@
 }
 
 .formContainer {
-    background-image: url('/papercut-bg.png');
+    background-image: url('/common/papercut-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 140vh;
+    min-height: 150vh;
 }
 
 .formContainerDown {
-    background-image: url('/papercut-bg-rotate.png');
+    background-image: url('/common/papercut-bg-rotate.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100vh;
@@ -83,4 +83,34 @@
     position: absolute;
 }
 
+
+.imageBg1 {
+    background-image: url('/about/img1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 28vw;
+    max-width: 100vw;
+    height: 50vh;
+    background-position: center center;
+}
+
+.imageBg2 {
+    background-image: url('/about/img2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 28vw;
+    max-width: 100vw;
+    height: 50vh;
+    background-position: center center;
+}
+
+.imageBg3 {
+    background-image: url('/about/img3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 28vw;
+    max-width: 100vw;
+    height: 50vh;
+    background-position: center center;
+}
 

@@ -8,7 +8,7 @@ import ServicesBox from "../components/Home/ServicesBox";
 import MainFormContainer from "../components/Home/MainFormContainer";
 import Partners from "../components/Home/Partners";
 import FAQ from "../components/Home/FAQ";
-import Footer from "../components/Home/Footer";
+import Footer from "../components/Common/Footer";
 import ServicesExpandable from "../components/Home/ServicesExpand";
 
 
@@ -19,7 +19,7 @@ export default function Home() {
                 <Head>
                     <title>خانه</title>
                     <meta name = "description" content = "مرکز فناوری دنیای اقتصاد"/>
-                    <link rel = "icon" href = "/logo.png"/>
+                    <link rel = "icon" href = "/common/logo.png"/>
                 </Head>
                 <Hero/>
                 <main className = {styles.main + " relative"}>
@@ -33,7 +33,6 @@ export default function Home() {
                         </div>
                         <ServicesBox/>
                         <ServicesExpandable/>
-
                     </div>
                     <MainFormContainer/>
                     <Partners/>

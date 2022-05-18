@@ -2,11 +2,11 @@ export default function AboutHero() {
     return (
 
         <div className = {"flex flex-row justify-center items-center row-span-3 gap-20 mt-12 sm:mt-24"}>
-            <img src = {"/logo-text.png"} alt = {"logo"} className = "hidden sm:block max-h-40 w-auto"/>
+            <img src = {"/common/logo-text.png"} alt = {"logo"} className = "hidden sm:block max-h-40 w-auto"/>
             <div className = {"flex flex-col"}>
                 <div
                     className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6 mb-8"}>
-                    <img src = {"/About/lamp.png"} className = {"brightness-0 invert w-16"}/>
+                    <img src = {"/about/lamp.png"} className = {"brightness-0 invert w-16"}/>
                     <p className = {"text-justify font-light text-shades-10 text-4xl"}>درباره ما</p>
                 </div>
                 <p className = {"text-justify font-light text-shades-20 text-lg"}>
