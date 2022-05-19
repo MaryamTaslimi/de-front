@@ -26,10 +26,12 @@ export default function Header({transparent}) {
                         </Link>
 
                         {navigation.map((link) => (
-                            <a key = {link.name} href = {link.href}
-                               className = {"text-base font-light" + transparent ? "text-white" : "text-primary"}>
-                                {link.name}
-                            </a>
+                            <Link key = {link.name} href = {link.href}>
+                                <a
+                                    className = {"text-base font-light" + transparent ? "text-white" : "text-primary"}>
+                                    {link.name}
+                                </a>
+                            </Link>
                         ))}
                     </div>
                     <div className = "z-10">

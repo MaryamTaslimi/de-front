@@ -1,6 +1,7 @@
 import styles from "/styles/Home.module.css"
 import KeyboardArrowLeftRoundedIcon from '@mui/icons-material/KeyboardArrowLeftRounded';
 import {grey} from "@mui/material/colors";
+import Link from "next/link";
 
 export default function ImagesSection() {
     return (
@@ -17,14 +18,16 @@ export default function ImagesSection() {
                         سرمایه‌گذاران حقیقی و حقوقی،شتاب‌دهنده‌ها <br/>و<br/>
                         سرمایه‌گذاران خطرپذیر
                     </p>
-                    <a href = "/investor" className = {"text-2xl text-shades-10 font-light self-end"}>
-                        <div className = {"flex flex-row items-center"}>
-                            <p className = {"text-lg text-shades-10 font-light"}>
-                                سرمایه‌گذاران
-                            </p>
-                            <KeyboardArrowLeftRoundedIcon className = {"text-shades-10"} sx = {{fontSize: 25}}/>
-                        </div>
-                    </a>
+                    <Link href = "/investor">
+                        <a className = {"text-2xl text-shades-10 font-light self-end"}>
+                            <div className = {"flex flex-row items-center"}>
+                                <p className = {"text-lg text-shades-10 font-light"}>
+                                    سرمایه‌گذاران
+                                </p>
+                                <KeyboardArrowLeftRoundedIcon className = {"text-shades-10"} sx = {{fontSize: 25}}/>
+                            </div>
+                        </a>
+                    </Link>
                 </div>
 
                 <div className = {styles.imageBg2 + " flex flex-col p-4 justify-end items-start gap-4 md:gap-16"}>
@@ -34,12 +37,14 @@ export default function ImagesSection() {
                         <br className = {"hidden md:block"}/>
                         <br className = {"hidden md:block"}/>
                     </p>
-                    <a href = "/partnership" className = {"text-2xl text-shades-10 font-light self-end"}>
-                        <div className = {"flex flex-row items-center"}>
-                            <p className = {"text-lg text-shades-10 font-light"}>شراکت استراتژیک </p>
-                            <KeyboardArrowLeftRoundedIcon className = {"text-shades-10"} sx = {{fontSize: 25}}/>
-                        </div>
-                    </a>
+                    <Link href = "/partnership">
+                        <a className = {"text-2xl text-shades-10 font-light self-end"}>
+                            <div className = {"flex flex-row items-center"}>
+                                <p className = {"text-lg text-shades-10 font-light"}>شراکت استراتژیک </p>
+                                <KeyboardArrowLeftRoundedIcon className = {"text-shades-10"} sx = {{fontSize: 25}}/>
+                            </div>
+                        </a>
+                    </Link>
                 </div>
 
                 <div className = {styles.imageBg3 + " flex flex-col p-4 justify-end items-start gap-4 md:gap-16"}>
@@ -49,12 +54,14 @@ export default function ImagesSection() {
                         <br className = {"hidden md:block"}/>
                         <br className = {"hidden md:block"}/>
                     </p>
-                    <a href = "/startup" className = {"text-2xl text-shades-10 font-light self-end"}>
-                        <div className = {"flex flex-row items-center"}>
-                            <p className = {"text-lg text-shades-10 font-light"}>سرمایه پذیران</p>
-                            <KeyboardArrowLeftRoundedIcon className = {"text-shades-10"} sx = {{fontSize: 25}}/>
-                        </div>
-                    </a>
+                    <Link href = "/startup">
+                        <a className = {"text-2xl text-shades-10 font-light self-end"}>
+                            <div className = {"flex flex-row items-center"}>
+                                <p className = {"text-lg text-shades-10 font-light"}>سرمایه پذیران</p>
+                                <KeyboardArrowLeftRoundedIcon className = {"text-shades-10"} sx = {{fontSize: 25}}/>
+                            </div>
+                        </a>
+                    </Link>
                 </div>
 
             </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const navigation = [
     {name: 'سرمایه‌گذاران', href: 'investor'},
     {name: 'شراکت استراتژیک', href: '/partnership'},
@@ -20,10 +22,12 @@ export default function Footer() {
         <div className = {"bg-shades-10 grid grid-cols-4 px-24 py-9"}>
             <div className = {"flex flex-col gap-6 ml-20"}>
                 {navigation.map((item) => (
-                    <a key = {item.name} href = {item.href}
-                       className = {"text-base font-light text-primary"}>
-                        {item.name}
-                    </a>
+                    <Link key = {item.name} href = {item.href}>
+                        <a
+                            className = {"text-base font-light text-primary"}>
+                            {item.name}
+                        </a>
+                    </Link>
                 ))}
             </div>
             <div className = {"flex flex-col justify-end gap-6"}>
@@ -50,9 +54,11 @@ export default function Footer() {
                     <img src = {"/common/logo-text.png"} className = {"w-32"} alt = {"logo"}/>
                     <img src = {"/home/logo-p5.png"} className = {"w-32"} alt = {"salim logo"}/>
                 </div>
-                <p className = {"font-light text-xs text-shades-60 text-center"}>کلیه حقوق مادی و معنوی این سایت متعلق به مرکز
+                <p className = {"font-light text-xs text-shades-60 text-center"}>کلیه حقوق مادی و معنوی این سایت متعلق
+                    به مرکز
                     نوآوری و کسب و کار دیجیتال دنیای اقتصاد می‌باشد.</p>
-                <p className = {"font-light text-xs text-[#79A505] text-center"}>اجرا از شرکت راهکار تجارت الکترونیک سلیم</p>
+                <p className = {"font-light text-xs text-[#79A505] text-center"}>اجرا از شرکت راهکار تجارت الکترونیک
+                    سلیم</p>
             </div>
 
         </div>
