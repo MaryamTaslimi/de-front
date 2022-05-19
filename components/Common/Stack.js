@@ -4,14 +4,6 @@ import {useEffect, useRef} from "react";
 export default function Stack({title, src, color, bodyItems}) {
     const colorClass = useRef("");
     const basis = useRef("");
-    const lastId = useRef("");
-    const height = useRef("100%");
-    useEffect(() => {
-        let h1 = document.getElementById(lastId.current).offsetHeight;
-        let h2 = document.getElementById(color).offsetHeight;
-        height.current = `${h2 - h1}px`
-        console.log(height.current)
-    }, [color, lastId])
 
     switch (color) {
         case 1:
@@ -34,12 +26,9 @@ export default function Stack({title, src, color, bodyItems}) {
             </div>
             <div className = {"relative flex flex-col gap-10"} id = {color}>
                 {
-                    bodyItems.map((item, index, array) => {
-                            if (index + 1 === array.length) {
-                                lastId.current = color + "" + index
-                            }
+                    bodyItems.map((item) => {
                             return (
-                                <div key = {item} id = {color + "" + index}
+                                <div key = {item}
                                      className = {"flex flex-row items-stretch gap-4 mr-1.5 h-8"}>
                                     <HexagonRoundedIcon className = {colorClass.current + " rotate-90 z-10"}
                                                         sx = {{fontSize: "xx-large"}}/>

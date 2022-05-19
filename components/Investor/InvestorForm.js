@@ -73,7 +73,7 @@ export default function InvestorForm() {
                     </div>
 
 
-                    <div className = {" border border-form-grey"}>
+                    <div className = {"rounded-sm border border-form-grey"}>
                         <div
                             className = {"flex flex-row items-center justify-between rounded-sm p-2"}>
                             <p className = {"text-shades-80 text-base font-light"}>آیا تا به حال تجربه سرمایه‌گذاری در

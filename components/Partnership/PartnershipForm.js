@@ -2,6 +2,7 @@ import PersonPinSharpIcon from '@mui/icons-material/PersonPinSharp';
 import WorkSharpIcon from '@mui/icons-material/WorkSharp';
 import ContactPhoneSharpIcon from '@mui/icons-material/ContactPhoneSharp';
 import PaidSharpIcon from '@mui/icons-material/PaidSharp';
+import KeyboardDoubleArrowUpSharpIcon from '@mui/icons-material/KeyboardDoubleArrowUpSharp';
 import {apiRoutes} from "../../utils/const";
 import axios from "axios";
 import {useState} from "react";
@@ -76,7 +77,7 @@ export default function PartnershipForm() {
 
 
                     <div className = "my-2 relative">
-                        <WorkSharpIcon
+                        <KeyboardDoubleArrowUpSharpIcon
                             className = {"absolute left-2 top-2.5 text-form-grey text-md"}/>
                         <input
                             onChange = {(e) =>
@@ -91,7 +92,7 @@ export default function PartnershipForm() {
                     </div>
 
 
-                    <div className = {" border border-form-grey"}>
+                    <div className = {"rounded-sm border border-form-grey"}>
                         <div
                             className = {"flex flex-row items-center justify-between rounded-sm p-2"}>
                             <p className = {"text-shades-80 text-base font-light"}>نوع کسب و کار</p>

@@ -12,7 +12,7 @@ export default function Header({transparent}) {
                 <div
                     className = "w-full py-4 flex items-center justify-between border-b border-accent lg:border-none">
                     <div className = "flex space-x-20 items-center z-10">
-                        <a href = "#" className = "ml-10">
+                        <a href = "" className = "ml-10">
                             <span className = "sr-only">مرکز فناوری دنیای اقتصاد</span>
                             <img
                                 className = "h-12 w-auto"
