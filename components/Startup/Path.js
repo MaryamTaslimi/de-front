@@ -20,13 +20,13 @@ export default function Path() {
         <div>
         <div
             className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6"}>
-            <img src = {"/startup/h0.png"} className = {"w-12"}/>
+            <img src = {"/common/h0.png"} className = {"w-12"}/>
             <p className = {"text-justify font-light text-shades-10 text-4xl"}>مسیر همکاری سرمایه‌پذیران</p>
         </div>
         <div className = {"flex flex-row justify-between flex-wrap md:flex-nowrap gap-16 mt-16"}>
-            <Stack title = {"پرکردن فرم و مشاوره تخصصی"} src = {"/startup/h1.png"} color = {1} bodyItems = {col1}/>
-            <Stack title = {"عقد قرارداد"} src = {"/startup/h2.png"} color = {2} bodyItems = {col2}/>
-            <Stack title = {"مدیریت و همراهی پروژه"} src = {"/startup/h3.png"} color = {3} bodyItems = {col3} className={"basis-1/5"}/>
+            <Stack title = {"پرکردن فرم و مشاوره تخصصی"} src = {"/common/h1.png"} color = {1} bodyItems = {col1}/>
+            <Stack title = {"عقد قرارداد"} src = {"/common/h2.png"} color = {2} bodyItems = {col2}/>
+            <Stack title = {"مدیریت و همراهی پروژه"} src = {"/common/h3.png"} color = {3} bodyItems = {col3} className={"basis-1/5"}/>
         </div>
         </div>
     )

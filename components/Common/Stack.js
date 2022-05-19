@@ -24,7 +24,7 @@ export default function Stack({title, src, color, bodyItems}) {
                 <img src = {src} className = {"w-12"}/>
                 <p className = {"font-light text-2xl text-shades-10"}>{title}</p>
             </div>
-            <div className = {"relative flex flex-col gap-10"} id = {color}>
+            <div className = {"relative flex flex-col gap-10"}>
                 {
                     bodyItems.map((item) => {
                             return (
