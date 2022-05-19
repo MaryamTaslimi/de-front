@@ -14,7 +14,7 @@ export default function MainFormContainer() {
     return (
         <div>
             <div className = {styles.formContainer + " flex items-end justify-center pb-24"}>
-                <div className = {" max-w-6xl flex flex-row justify-between items-center gap-8"}>
+                <div className = {" w-2/3 flex flex-row justify-between items-center gap-8"}>
                     <div className = {" relative flex flex-col gap-10 shrink"}>
                         <div className = {"flex flex-row items-center gap-4"}>
                             <img src = "/common/h0.png" className = {"w-12 z-10"}/>

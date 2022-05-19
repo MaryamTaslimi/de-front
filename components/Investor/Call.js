@@ -12,8 +12,8 @@ export default function Call() {
                 که در ایجاد حرکت و پیشرفت صنعت و اقتصاد کشور دارند، از توجه ویژه و دانش تخصصی تیم حرفه‌ای ما متنفع
                 هستند. برای دریافت مشاوره در زمینه سرمایه گذاری با تماس بگیرید.</p>
             <a href = "https://wa.me/093861575703" className = {"self-end"}>
-                <div className = {"flex flex-row items-center"}>
-                    <p className = {"text-lg text-shades-100 font-light"}>سرمایه پذیران</p>
+                <div className = {"flex flex-row items-center gap-6"}>
+                    <p className = {"text-lg text-shades-100 font-light"}>دریافت مشاوره</p>
                     <KeyboardDoubleArrowLeft className = {"text-shades-100"} sx = {{fontSize: 25}}/>
                 </div>
             </a>

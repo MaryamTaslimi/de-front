@@ -19,8 +19,8 @@ const socialMedia = [
 
 export default function Footer() {
     return (
-        <div className = {"bg-shades-10 grid grid-cols-4 px-24 py-9"}>
-            <div className = {"flex flex-col gap-6 ml-20"}>
+        <div className = {"relative bg-shades-10 grid grid-cols-4 px-24 py-9"}>
+            <div className = {"flex flex-col gap-6"}>
                 {navigation.map((item) => (
                     <Link key = {item.name} href = {item.href}>
                         <a
@@ -30,7 +30,7 @@ export default function Footer() {
                     </Link>
                 ))}
             </div>
-            <div className = {"flex flex-col justify-end gap-6"}>
+            <div className = {"flex flex-col justify-end gap-6 col-span-2"}>
                 {disableNavigation.map((item) => (
                     <a key = {item.name} href = {item.href}
                        className = {"text-base font-light text-shades-40"}>
@@ -38,7 +38,8 @@ export default function Footer() {
                     </a>
                 ))}
             </div>
-            <div className = {"flex flex-row justify-center items-center gap-6 justify-self-start place-self-center"}>
+
+            <div className = {"absolute bottom-[30%] right-[46%] flex flex-row justify-center items-center gap-6 justify-self-start place-self-center"}>
                 {socialMedia.map((item) => (
                     <div key = {item.name} className = {"flex flex-col gap-2"}>
                         <a href = {item.href}

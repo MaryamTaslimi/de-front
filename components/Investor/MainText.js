@@ -2,7 +2,7 @@ export default function MainText() {
     return (
         <div className = {"flex flex-row min-h-[110vh]"}>
             <div className = {"flex flex-col justify-between items-stretch w-1/2 pl-8 border-l-2 border-shades-60"}>
-                <div className = {"flex flex-col gap-8"}>
+                <div className = {"flex flex-col gap-8 min-h-[90vh]"}>
                     <p className = {"text-right font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-6"}>چرا
                         سرمایه‌گذاری؟</p>
                     <p className = {"text-justify font-light text-shades-10 text-lg"}>

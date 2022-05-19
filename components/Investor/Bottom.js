@@ -6,7 +6,7 @@ import Contact from "../Common/Contact";
 export default function Bottom() {
     return (
     <div className = {"flex items-center justify-center"}>
-        <div className = {"max-w-6xl"}>
+        <div className = {"w-2/3"}>
             <Call/>
             <Gap/>
             <Team/>

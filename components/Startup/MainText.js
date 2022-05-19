@@ -47,7 +47,7 @@ export default function MainText() {
             </div>
 
             <div className = {"flex flex-col w-1/2 pr-8"}>
-                <div className = {"invisible flex flex-col gap-8"}>
+                <div className = {"invisible flex flex-col gap-8 min-h-[90vh]"}>
                     <p className = {"text-right font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-6"}>سرمایه‌پذیر</p>
                     <p className = {"text-justify font-light text-shades-10 text-lg"}>
                         جابون نام یک استارتاپ با محوریت فناوری‌های پوشیدنی بود که لوازم جانبی مختلفی از جمله هندزفری
