@@ -12,28 +12,37 @@ export default function PartnershipForm() {
     const [name, setName] = useState("");
     const [business, setBusiness] = useState("");
     const [position, setPosition] = useState("");
-    const [phone, setPhone] = useState("");
     const [kind, setKind] = useState("");
+    const [phone, setPhone] = useState("");
 
     const submitForm = () => {
-        axios.post(apiRoutes.baseURL + apiRoutes.partnerForm, {
-            "name": name,
-            "business": business,
-            "phone": phone,
-            "kind": kind
-        }, {
-            headers: {
-                "Content-Type": "application/json",
-            },
-            withCredentials: true
-        })
-            .then(function (response) {
-                console.log(response.data);
+
+        if (name && phone) {
+            axios.post(apiRoutes.baseURL + apiRoutes.partnerForm, {
+                "name": name,
+                "business": business,
+                "position": position,
+                "kind": kind,
+                "phone": phone,
+            }, {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                withCredentials: true
             })
-            .catch(function (error) {
-                console.log(error);
-                return false;
-            })
+                .then(response => {
+                    alert("اطلاعات شما با موفقیت ثبت شد!")
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    alert("مشکلی در اطلاعات شما وجود دارد! لطفا مجددا بررسی کنید.")
+                    console.log(error);
+                    return false;
+                })
+        } else {
+            alert("وارد کردن نام و شماره همراه الزامی است.")
+        }
+
     }
 
     return (
@@ -103,10 +112,11 @@ export default function PartnershipForm() {
                         <div className = "bg-shades-20 flex flex-col gap-4 pr-8 py-6">
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op1"
                                     id = "op1"
+                                    checked = {kind === "شتاب‌دهنده"}
                                     value = "شتاب‌دهنده"
                                     onChange = {(e) =>
                                         setKind(e.target.value)
@@ -120,10 +130,11 @@ export default function PartnershipForm() {
 
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op2"
                                     id = "op2"
+                                    checked = {kind === "مرکز تحقیق و توسعه"}
                                     value = "مرکز تحقیق و توسعه"
                                     onChange = {(e) =>
                                         setKind(e.target.value)
@@ -137,11 +148,12 @@ export default function PartnershipForm() {
 
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op3"
                                     id = "op3"
-                                    value = "مسرمایه‌گذاری خطرپذیر"
+                                    checked = {kind === "سرمایه‌گذاری خطرپذیر"}
+                                    value = "سرمایه‌گذاری خطرپذیر"
                                     onChange = {(e) =>
                                         setKind(e.target.value)
                                     }
@@ -154,10 +166,11 @@ export default function PartnershipForm() {
 
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op4"
                                     id = "op4"
+                                    checked = {kind === "صندوق‌های سرمایه‌گذاری"}
                                     value = "صندوق‌های سرمایه‌گذاری"
                                     onChange = {(e) =>
                                         setKind(e.target.value)
@@ -171,10 +184,11 @@ export default function PartnershipForm() {
 
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op5"
                                     id = "op5"
+                                    checked = {kind === "سایر"}
                                     value = "سایر"
                                     onChange = {(e) =>
                                         setKind(e.target.value)

@@ -8,7 +8,7 @@ export const apiRoutes = {
     baseURL: `http://localhost:${port}/`,
     mainForm: "main-form",
     investorForm: "investor-form",
-    partnerForm: "partner-form",
+    partnerForm: "partnership-form",
     startupForm: "startup-form",
 }
 

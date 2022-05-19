@@ -10,33 +10,44 @@ import {useState} from "react";
 export default function InvestorForm() {
     const [name, setName] = useState("");
     const [business, setBusiness] = useState("");
-    const [phone, setPhone] = useState("");
     const [experience, setExperience] = useState("");
+    const [phone, setPhone] = useState("");
 
     const submitForm = () => {
-        axios.post(apiRoutes.baseURL + apiRoutes.investorForm, {
-            "name": name,
-            "business": business,
-            "phone": phone,
-            "experience": experience
-        }, {
-            headers: {
-                "Content-Type": "application/json",
-            },
-            withCredentials: true
-        })
-            .then(function (response) {
-                console.log(response.data);
+
+        if (name && phone) {
+            axios.post(apiRoutes.baseURL + apiRoutes.investorForm, {
+                "name": name,
+                "business": business,
+                "experience": experience,
+                "phone": phone
+            }, {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                withCredentials: true
             })
-            .catch(function (error) {
-                console.log(error);
-                return false;
-            })
+                .then(response => {
+                    alert("اطلاعات شما با موفقیت ثبت شد!")
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    alert("مشکلی در اطلاعات شما وجود دارد! لطفا مجددا بررسی کنید.")
+                    console.log(error);
+                    return false;
+                })
+        }
+        else {
+            alert("وارد کردن نام و شماره همراه الزامی است.")
+        }
+
+
     }
 
     return (
         <div className = "w-full max-w-lg bg-shades-10 rounded-sm border-2 border-form-grey" id = {"form"}>
-            <p className = {"bg-accent text-center text-shades-100 text-2xl font-light py-4 px-8"}>فرم ثبت نام سرمایه‌گذاران</p>
+            <p className = {"bg-accent text-center text-shades-100 text-2xl font-light py-4 px-8"}>فرم ثبت نام
+                سرمایه‌گذاران</p>
             <div className = {"px-8"}>
                 <p className = {"text-shades-80 text-justify text-base font-light my-6"}>برای آنکه مسیر همکاری مشترکمان
                     هموارتر شود، میتوانید فرم زیر را پر کنید و منتظر مشاوره تخصصی و رایگان تیم ما باشید!
@@ -53,6 +64,7 @@ export default function InvestorForm() {
                             id = "name"
                             type = "text"
                             placeholder = "نام و نام خانوادگی"
+                            required
                             className = "appearance-none border border-form-grey rounded-sm w-full p-2 text-base font-light placeholder-shades-80 focus:border-primary focus:placeholder-transparent"
                         />
                     </div>
@@ -85,10 +97,11 @@ export default function InvestorForm() {
                         <div className = "bg-shades-20 flex flex-col gap-4 pr-8 py-6">
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op1"
                                     id = "op1"
+                                    checked = {experience === "بله، داشته‌ام."}
                                     value = "بله، داشته‌ام."
                                     onChange = {(e) =>
                                         setExperience(e.target.value)
@@ -101,10 +114,11 @@ export default function InvestorForm() {
                             </div>
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op2"
                                     id = "op2"
+                                    checked = {experience === "خیر، تجربه سرمایه گذاری در استارتاپ ندارم."}
                                     value = "خیر، تجربه سرمایه گذاری در استارتاپ ندارم."
                                     onChange = {(e) =>
                                         setExperience(e.target.value)

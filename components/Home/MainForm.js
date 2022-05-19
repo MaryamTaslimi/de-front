@@ -9,33 +9,42 @@ import axios from "axios";
 
 export default function MainForm() {
     const [name, setName] = useState("");
+    const [workArea, setWorkArea] = useState("");
     const [phone, setPhone] = useState("");
     const [email, setEmail] = useState("");
-    const [workArea, setWorkArea] = useState("");
 
     const submitForm = () => {
-        axios.post(apiRoutes.baseURL + apiRoutes.mainForm, {
-            "name": name,
-            "phone": phone,
-            "email": email,
-            "workArea": workArea
-        }, {
-            headers: {
-                "Content-Type": "application/json",
-            },
-            withCredentials: true
-        })
-            .then(function (response) {
-                console.log(response.data);
+
+        if (name && phone) {
+            axios.post(apiRoutes.baseURL + apiRoutes.mainForm, {
+                "name": name,
+                "workArea": workArea,
+                "phone": phone,
+                "email": email
+            }, {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                withCredentials: true
             })
-            .catch(function (error) {
-                console.log(error);
-                return false;
-            })
+                .then(response => {
+                    alert("اطلاعات شما با موفقیت ثبت شد!")
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    alert("مشکلی در اطلاعات شما وجود دارد! لطفا مجددا بررسی کنید.")
+                    console.log(error);
+                    return false;
+                })
+        }
+        else {
+            alert("وارد کردن نام و شماره همراه الزامی است.")
+        }
+
     }
 
     return (
-        <div className = "w-full max-w-lg bg-shades-10 rounded-sm border-2 border-form-grey" id={"form"}>
+        <div className = "w-full max-w-lg bg-shades-10 rounded-sm border-2 border-form-grey" id = {"form"}>
             <p className = {"bg-accent text-center text-shades-100 text-2xl font-light py-4 px-8"}>ثبت نام</p>
             <div className = {"px-8"}>
                 <p className = {"text-shades-80 text-justify text-base font-light my-6"}>ما همراه گروه های مختلفی از
@@ -56,6 +65,7 @@ export default function MainForm() {
                             id = "name"
                             type = "text"
                             placeholder = "نام و نام خانوادگی"
+                            required
                             className = "appearance-none border border-form-grey rounded-sm w-full p-2 text-base font-light placeholder-shades-80 focus:border-primary focus:placeholder-transparent"
                         />
                     </div>
@@ -71,65 +81,73 @@ export default function MainForm() {
                         <div className = "bg-shades-20 flex flex-col gap-4 pr-8 py-6">
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op1"
                                     id = "op1"
+                                    checked = {workArea === "سرمایه گذاری در کسب و کار های جدید"}
                                     value = "سرمایه گذاری در کسب و کار های جدید"
                                     onChange = {(e) =>
                                         setWorkArea(e.target.value)
                                     }
                                 />
-                                <label className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
-                                       htmlFor = "op1">
+                                <label
+                                    className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
+                                    htmlFor = "op1">
                                     سرمایه گذاری در کسب و کار های جدید
                                 </label>
                             </div>
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op2"
                                     id = "op2"
+                                    checked = {workArea === "به دنبال سرمایه برای راه اندازی یا نگهداشت استارتاپ یا ایده"}
                                     value = "به دنبال سرمایه برای راه اندازی یا نگهداشت استارتاپ یا ایده"
                                     onChange = {(e) =>
                                         setWorkArea(e.target.value)
                                     }
                                 />
-                                <label className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
-                                       htmlFor = "op2">
+                                <label
+                                    className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
+                                    htmlFor = "op2">
                                     به دنبال سرمایه برای راه اندازی یا نگهداشت استارتاپ یا ایده
                                 </label>
                             </div>
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op3"
                                     id = "op3"
+                                    checked = {workArea === "همکاری استراتژیک و راهبردی در انجام پروژه‌ها"}
                                     value = "همکاری استراتژیک و راهبردی در انجام پروژه‌ها"
                                     onChange = {(e) =>
                                         setWorkArea(e.target.value)
                                     }
                                 />
-                                <label className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
-                                       htmlFor = "op3">
+                                <label
+                                    className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
+                                    htmlFor = "op3">
                                     همکاری استراتژیک و راهبردی در انجام پروژه‌ها
                                 </label>
                             </div>
                             <div className = "flex flex-row">
                                 <input
-                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                                    className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                                     type = "radio"
                                     name = "op4"
                                     id = "op4"
+                                    checked = {workArea === "موارد دیگر"}
                                     value = "موارد دیگر"
                                     onChange = {(e) =>
                                         setWorkArea(e.target.value)
                                     }
                                 />
-                                <label className = "mr-6 form-check-label inline-block text-shades-100 font-light  text-base"
-                                       htmlFor = "op4">
+                                <label
+                                    className = "mr-6 form-check-label inline-block text-shades-100 font-light  text-base"
+                                    htmlFor = "op4">
                                     موارد دیگر
                                 </label>
                             </div>

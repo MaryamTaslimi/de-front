@@ -19,19 +19,32 @@ export default function StartupForm() {
 
 
     const submitForm = () => {
-        const formData = new FormData();
-        formData.append("name", name);
-        formData.append("doc", selectedFile);
-        axios.post(apiRoutes.baseURL + apiRoutes.startupForm, formData, {
-            "Content-Type": "multipart/form-data"
-        })
-            .then(function (response) {
-                console.log(response.data);
+
+
+        if (name && phone) {
+            const formData = new FormData();
+            formData.append("name", name);
+            formData.append("startup", startup);
+            formData.append("workArea", workArea);
+            formData.append("phone", phone);
+            formData.append("doc", selectedFile);
+            axios.post(apiRoutes.baseURL + apiRoutes.startupForm, formData, {
+                "Content-Type": "multipart/form-data"
             })
-            .catch(function (error) {
-                console.log(error);
-                return false;
-            })
+                .then(response => {
+                    alert("اطلاعات شما با موفقیت ثبت شد!")
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    alert("مشکلی در اطلاعات شما وجود دارد! لطفا مجددا بررسی کنید.")
+                    console.log(error);
+                    return false;
+                })
+        } else {
+            alert("وارد کردن نام و شماره همراه الزامی است.")
+        }
+
+
     }
 
     return (
@@ -54,6 +67,7 @@ export default function StartupForm() {
                             id = "name"
                             type = "text"
                             placeholder = "نام و نام خانوادگی"
+                            required
                             className = "appearance-none border border-form-grey rounded-sm w-full p-2 text-base font-light placeholder-shades-80 focus:border-primary focus:placeholder-transparent"
                         />
                     </div>
@@ -102,12 +116,12 @@ export default function StartupForm() {
                                                  sx = {{fontSize: 50}}/>
                             <div className = "flex flex-row justify-between items-center gap-4">
                                 <label
-                                    htmlFor = "upload"
+                                    htmlFor = "doc"
                                     className = "cursor-pointer font-light text-base text-shades-100 px-2 py-1 rounded-sm bg-shades-40 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-accent-50"
                                 >
                                     <span>انتخاب فایل</span>
-                                    <input id = "upload" name = "upload" type = "file"
-                                        className = "sr-only"
+                                    <input id = "doc" name = "doc" type = "file"
+                                           className = "sr-only"
                                            onChange = {(e) => {
                                                setSelectedFile(e.target.files[0]);
                                            }
@@ -149,6 +163,7 @@ export default function StartupForm() {
                     </div>
 
                 </form>
+
             </div>
 
         </div>
