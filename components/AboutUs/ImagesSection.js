@@ -17,7 +17,7 @@ export default function ImagesSection() {
                         سرمایه‌گذاران حقیقی و حقوقی،شتاب‌دهنده‌ها <br/>و<br/>
                         سرمایه‌گذاران خطرپذیر
                     </p>
-                    <a href = "#" className = {"text-2xl text-shades-10 font-light self-end"}>
+                    <a href = "/investor" className = {"text-2xl text-shades-10 font-light self-end"}>
                         <div className = {"flex flex-row items-center"}>
                             <p className = {"text-lg text-shades-10 font-light"}>
                                 سرمایه‌گذاران
@@ -34,7 +34,7 @@ export default function ImagesSection() {
                         <br className = {"hidden md:block"}/>
                         <br className = {"hidden md:block"}/>
                     </p>
-                    <a href = "#" className = {"text-2xl text-shades-10 font-light self-end"}>
+                    <a href = "/partnership" className = {"text-2xl text-shades-10 font-light self-end"}>
                         <div className = {"flex flex-row items-center"}>
                             <p className = {"text-lg text-shades-10 font-light"}>شراکت استراتژیک </p>
                             <KeyboardArrowLeftRoundedIcon className = {"text-shades-10"} sx = {{fontSize: 25}}/>
@@ -49,7 +49,7 @@ export default function ImagesSection() {
                         <br className = {"hidden md:block"}/>
                         <br className = {"hidden md:block"}/>
                     </p>
-                    <a href = "#" className = {"text-2xl text-shades-10 font-light self-end"}>
+                    <a href = "/startup" className = {"text-2xl text-shades-10 font-light self-end"}>
                         <div className = {"flex flex-row items-center"}>
                             <p className = {"text-lg text-shades-10 font-light"}>سرمایه پذیران</p>
                             <KeyboardArrowLeftRoundedIcon className = {"text-shades-10"} sx = {{fontSize: 25}}/>

@@ -35,10 +35,10 @@ export default function MainForm() {
     }
 
     return (
-        <div className = "w-full max-w-lg bg-shades-10 rounded-sm border-2 border-form-grey">
-            <p className = {"bg-accent text-center text-shades-100 text-2xl text-light py-4 px-8"}>ثبت نام</p>
+        <div className = "w-full max-w-lg bg-shades-10 rounded-sm border-2 border-form-grey" id={"form"}>
+            <p className = {"bg-accent text-center text-shades-100 text-2xl font-light py-4 px-8"}>ثبت نام</p>
             <div className = {"px-8"}>
-                <p className = {"text-shades-80 text-justify text-base text-light my-6"}>ما همراه گروه های مختلفی از
+                <p className = {"text-shades-80 text-justify text-base font-light my-6"}>ما همراه گروه های مختلفی از
                     بازیگران
                     صنعت در زمینه‌های مختلف همکاری و پروژه های مشترک داریم.
                     <br/>
@@ -53,17 +53,17 @@ export default function MainForm() {
                                 setName(e.target.value)
                             }
                             value = {name}
-                            id = "username"
+                            id = "name"
                             type = "text"
                             placeholder = "نام و نام خانوادگی"
-                            className = "appearance-none border border-form-grey rounded-sm w-full p-2 text-base text-light placeholder-shades-80 focus:border-primary focus:placeholder-transparent"
+                            className = "appearance-none border border-form-grey rounded-sm w-full p-2 text-base font-light placeholder-shades-80 focus:border-primary focus:placeholder-transparent"
                         />
                     </div>
 
                     <div className = {" border border-form-grey"}>
                         <div
                             className = {"flex flex-row items-center justify-between rounded-sm p-2"}>
-                            <p className = {"text-shades-80 text-base text-light"}>حوزه کاری</p>
+                            <p className = {"text-shades-80 text-base font-light"}>حوزه کاری</p>
                             <WorkSharpIcon
                                 className = {"text-form-grey text-md"}/>
                         </div>
@@ -80,7 +80,7 @@ export default function MainForm() {
                                         setWorkArea(e.target.value)
                                     }
                                 />
-                                <label className = "mr-6 form-check-label inline-block text-shades-100 text-base"
+                                <label className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
                                        htmlFor = "op1">
                                     سرمایه گذاری در کسب و کار های جدید
                                 </label>
@@ -96,7 +96,7 @@ export default function MainForm() {
                                         setWorkArea(e.target.value)
                                     }
                                 />
-                                <label className = "mr-6 form-check-label inline-block text-shades-100 text-base"
+                                <label className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
                                        htmlFor = "op2">
                                     به دنبال سرمایه برای راه اندازی یا نگهداشت استارتاپ یا ایده
                                 </label>
@@ -112,7 +112,7 @@ export default function MainForm() {
                                         setWorkArea(e.target.value)
                                     }
                                 />
-                                <label className = "mr-6 form-check-label inline-block text-shades-100 text-base"
+                                <label className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
                                        htmlFor = "op3">
                                     همکاری استراتژیک و راهبردی در انجام پروژه‌ها
                                 </label>
@@ -128,7 +128,7 @@ export default function MainForm() {
                                         setWorkArea(e.target.value)
                                     }
                                 />
-                                <label className = "mr-6 form-check-label inline-block text-shades-100 text-base"
+                                <label className = "mr-6 form-check-label inline-block text-shades-100 font-light  text-base"
                                        htmlFor = "op4">
                                     موارد دیگر
                                 </label>
@@ -145,9 +145,9 @@ export default function MainForm() {
                             }
                             value = {phone}
                             id = "phone"
-                            type = "text"
+                            type = "tel"
                             placeholder = "شماره همراه"
-                            className = "appearance-none border border-form-grey rounded-sm w-full p-2 text-base text-light placeholder-shades-80 focus:border-primary focus:placeholder-transparent"
+                            className = "appearance-none border border-form-grey rounded-sm w-full p-2 text-base font-light placeholder-shades-80 focus:border-primary focus:placeholder-transparent"
                         />
                     </div>
 
@@ -160,9 +160,9 @@ export default function MainForm() {
                             }
                             value = {email}
                             id = "email"
-                            type = "text"
+                            type = "email"
                             placeholder = "ایمیل"
-                            className = "appearance-none border border-form-grey rounded-sm w-full p-2 text-base text-light placeholder-shades-80 focus:border-primary focus:placeholder-transparent"
+                            className = "appearance-none border border-form-grey rounded-sm w-full p-2 text-base font-light placeholder-shades-80 focus:border-primary focus:placeholder-transparent"
                         />
                     </div>
 

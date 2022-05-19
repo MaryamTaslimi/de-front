@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import '../styles/formStyles.css'
+import '../styles/otherStyles.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

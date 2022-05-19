@@ -5,12 +5,13 @@ import Hero from "../components/Home/Hero";
 import Introduction from "../components/Home/Introduction";
 import InfoBox from "../components/Home/InfoBox";
 import ServicesBox from "../components/Home/ServicesBox";
-import MainFormContainer from "../components/Home/MainFormContainer";
+import MainFormContainer from "../components/Common/MainFormContainer";
 import Partners from "../components/Home/Partners";
 import FAQ from "../components/Home/FAQ";
 import Footer from "../components/Common/Footer";
 import ServicesExpandable from "../components/Home/ServicesExpand";
-
+import Header from "../components/Common/Header";
+import MainFormSection from "../components/Home/MainFormSection";
 
 export default function Home() {
     return (
@@ -28,13 +29,11 @@ export default function Home() {
                         <Gear top = {"top-[37rem]"} x = {"-left-[10rem]"} size = {"w-[30rem]"}/>
                         <Gear top = {"top-[35rem]"} x = {"left-[19rem]"} size = {"w-[50vw]"}/>
                         <Introduction/>
-                        <div id = {"InfoBox"}>
                             <InfoBox/>
-                        </div>
                         <ServicesBox/>
                         <ServicesExpandable/>
                     </div>
-                    <MainFormContainer/>
+                    <MainFormSection/>
                     <Partners/>
                     <FAQ/>
                 </main>

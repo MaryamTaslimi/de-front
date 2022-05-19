@@ -15,7 +15,7 @@ export default function Gear({top, x, size}) {
         <div className = {"absolute " + top + " " + x}>
             <img
                 ref = {imageRef}
-                src = "/gear.png"
+                src = "/home/gear.png"
                 className = {" opacity-[0.04] " + size}
                 alt = "gear"
             />

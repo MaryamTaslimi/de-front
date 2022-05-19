@@ -1,8 +1,8 @@
 const navigation = [
-    {name: 'درباره ما', href: '#'},
-    {name: 'سرمایه‌گذاران', href: '#'},
-    {name: 'سرمایه‌پذیر', href: '#'},
-    {name: 'شراکت استراتژیک', href: '#'},
+    {name: 'سرمایه‌گذاران', href: 'investor'},
+    {name: 'شراکت استراتژیک', href: '/partnership'},
+    {name: 'سرمایه‌پذیر', href: '/startup'},
+    {name: 'درباره ما', href: '/about-us'},
 ]
 
 const disableNavigation = [
@@ -34,7 +34,7 @@ export default function Footer() {
                     </a>
                 ))}
             </div>
-            <div className = {"flex flex-row justify-center items-center gap-6 justify-self-center place-self-center"}>
+            <div className = {"flex flex-row justify-center items-center gap-6 justify-self-start place-self-center"}>
                 {socialMedia.map((item) => (
                     <div key = {item.name} className = {"flex flex-col gap-2"}>
                         <a href = {item.href}
@@ -48,11 +48,11 @@ export default function Footer() {
             <div className = {"flex flex-col items-center justify-center gap-4"}>
                 <div className = {"flex flex-row items-center justify-center gap-6"}>
                     <img src = {"/common/logo-text.png"} className = {"w-32"} alt = {"logo"}/>
-                    <img src = {"/logo-p5.png"} className = {"w-32"} alt = {"salim logo"}/>
+                    <img src = {"/home/logo-p5.png"} className = {"w-32"} alt = {"salim logo"}/>
                 </div>
-                <p className = {"text-light text-xs text-shades-60 text-center"}>کلیه حقوق مادی و معنوی این سایت متعلق به مرکز
+                <p className = {"font-light text-xs text-shades-60 text-center"}>کلیه حقوق مادی و معنوی این سایت متعلق به مرکز
                     نوآوری و کسب و کار دیجیتال دنیای اقتصاد می‌باشد.</p>
-                <p className = {"text-light text-xs text-[#79A505] text-center"}>اجرا از شرکت راهکار تجارت الکترونیک سلیم</p>
+                <p className = {"font-light text-xs text-[#79A505] text-center"}>اجرا از شرکت راهکار تجارت الکترونیک سلیم</p>
             </div>
 
         </div>

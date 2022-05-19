@@ -24,13 +24,13 @@ export default function HoveringDiamond() {
                         }
                     >
 
-                        <img src = {"/diamond-white.png"}
+                        <img src = {"/home/diamond-white.png"}
                              className = {"hovering w-96 z-10"}
                         />
-                        <p className = {"expandable absolute z-20 text-primary text-light text-2xl transition duration-500" + (hover && " opacity-0")}>چرا
+                        <p className = {"expandable absolute z-20 text-primary font-light text-2xl transition duration-500" + (hover && " opacity-0")}>چرا
                             ما</p>
                         <img src = {"/common/logo.png"}
-                             className = {"expandable w-24 absolute z-20 text-shades-100 text-light text-2xl transition duration-500" + (hover ? " opacity-100" : " opacity-0")}/>
+                             className = {"expandable w-24 absolute z-20 text-shades-100 font-light text-2xl transition duration-500" + (hover ? " opacity-100" : " opacity-0")}/>
                     </div>
                 </div>
             </div>

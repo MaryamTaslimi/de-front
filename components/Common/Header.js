@@ -1,9 +1,8 @@
 const navigation = [
-    {name: 'سرمایه‌گذاران', href: '#'},
-    {name: 'سرمایه‌پذیر', href: '#'},
-    {name: 'شراکت استراتژیک', href: '#'},
+    {name: 'سرمایه‌گذاران', href: 'investor'},
+    {name: 'شراکت استراتژیک', href: '/partnership'},
+    {name: 'سرمایه‌پذیر', href: '/startup'},
     {name: 'درباره ما', href: '/about-us'},
-
 ]
 
 export default function Header({transparent}) {
@@ -30,7 +29,7 @@ export default function Header({transparent}) {
                     </div>
                     <div className="z-10">
                         <a
-                            href = "#"
+                            href = "#form"
                             className = "z-10 inline-block bg-accent py-2 px-10 border border-transparent rounded-sm text-base font-extra text-black hover:bg-opacity-75"
                         >
                             همکاری با ما </a>

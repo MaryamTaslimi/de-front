@@ -1,4 +1,5 @@
 import Chevron from "../Common/Chevron";
+import ChevronForm from "../Common/ChevronForm";
 
 export default function Services() {
     return (
@@ -89,13 +90,7 @@ export default function Services() {
                     </div>
                 </div>
             </div>
-            <div className = {"flex flex-col justify-center items-center gap-4 mt-20"}>
-                <a href = {"#MainForm"}>
-                    <p className = {"text-shades-10 font-light text-lg"}>فرم همکاری</p>
-                    <Chevron/>
-                    <Chevron/>
-                </a>
-            </div>
+            <ChevronForm/>
         </div>
 
     )

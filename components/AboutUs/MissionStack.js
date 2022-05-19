@@ -2,7 +2,7 @@ import HexagonRoundedIcon from "@mui/icons-material/HexagonRounded";
 
 export default function MissionStack({title, bodyItems}) {
     return (
-        <div className = {"flex flex-col items-start gap-10 mx-6"}>
+        <div className = {"flex flex-col items-start gap-10 mx-8"}>
             <div className = {"flex flex-row items-center gap-4"}>
                 <HexagonRoundedIcon className = {"text-2xl text-accent rotate-90"} sx = {{fontSize: "xx-large"}}/>
                     {title === 1 ?
@@ -20,7 +20,7 @@ export default function MissionStack({title, bodyItems}) {
 
             {
                 bodyItems.map(item => (
-                    <div key={item} className = {"flex flex-row items-center gap-4 mr-1.5"}>
+                    <div key={item} className = {"flex flex-row items-center gap-4 mr-px"}>
                         <HexagonRoundedIcon className = {"text-accent-50 rotate-90"} sx = {{fontSize: "large"}}/>
                         <div className = {"font-light text-lg text-shades-40"}>
                             {item}

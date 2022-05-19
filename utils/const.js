@@ -7,5 +7,8 @@ const port = 5005
 export const apiRoutes = {
     baseURL: `http://localhost:${port}/`,
     mainForm: "main-form",
+    investorForm: "investor-form",
+    partnerForm: "partner-form",
+    startupForm: "startup-form",
 }
 

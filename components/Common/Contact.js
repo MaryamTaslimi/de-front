@@ -52,7 +52,7 @@ export default function Contact() {
                     {socialMedia.map((item) => (
                         <div key = {item.name} className = {"flex flex-col gap-2"}>
                             <a href = {item.href}
-                               className = {"text-base font-light text-[#6B6B6B]"}>
+                               className = {"text-base font-light text-shades-20"}>
                                 <img src = {item.src} alt = {item.name} className = {"w-12"}/>
                                 {item.name}
                             </a>

@@ -6,7 +6,7 @@ export default function AboutHero() {
             <div className = {"flex flex-col"}>
                 <div
                     className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6 mb-8"}>
-                    <img src = {"/about/lamp.png"} className = {"brightness-0 invert w-16"}/>
+                    <img src = {"/about/lamp.png"} className = {"brightness-0 invert w-16 mr-4"}/>
                     <p className = {"text-justify font-light text-shades-10 text-4xl"}>درباره ما</p>
                 </div>
                 <p className = {"text-justify font-light text-shades-20 text-lg"}>

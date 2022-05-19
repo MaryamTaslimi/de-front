@@ -11,7 +11,7 @@ export default function AccordionItem({question, answer}) {
                     {({open}) => (
                         <>
                             <Disclosure.Button
-                                className = {"w-full flex flex-row justify-between items-center px-4 py-2 text-right text-3xl font-thin transition-all duration-500 transform " + (open ? "bg-shades-20 text-primary hover:bg-primary hover:text-white" : "bg-primary text-white hover:bg-shades-20 hover:text-primary")}>
+                                className = {"w-full flex flex-row justify-between items-center px-4 py-2 text-right text-2xl font-thin transition-all duration-500 transform " + (open ? "bg-shades-20 text-primary hover:bg-primary hover:text-white" : "bg-primary text-white hover:bg-shades-20 hover:text-primary")}>
                                 <HexagonRoundedIcon/>
                                 <span className={"grow text-right pr-2"}>{question}</span>
                                 <ExpandMoreRoundedIcon

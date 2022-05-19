@@ -38,7 +38,7 @@ export default function FAQ() {
                     <p className = {"text-primary text-4xl font-light mb-4"}>سوالات پرتکرار</p>
                 </div>
                 <div
-                    className = {"max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center"}>
+                    className = {"max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center"}>
                     {
                         items.map(item => (
                             <AccordionItem key = {item.question} question = {item.question} answer = {item.answer}/>

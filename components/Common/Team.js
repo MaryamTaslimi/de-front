@@ -28,9 +28,9 @@ export default function Team() {
         <div className = {"flex flex-col"}>
             <div
                 className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6 mb-8"}>
-                <p className = {"text-justify font-light text-shades-10 text-2xl"}>تیم ما</p>
+                <p className = {"text-justify font-light text-shades-10 text-2xl mr-8"}>تیم ما</p>
             </div>
-            <div className = {"flex flex-row items-center justify-between"}>
+            <div className = {"flex flex-row items-center justify-evenly"}>
                 {
                     team.map(member => (
                         <div key={member.name} className = {"flex flex-col gap-6 justify-center items-center"}>
