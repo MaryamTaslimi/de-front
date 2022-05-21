@@ -6,7 +6,7 @@ import ChevronForm from "../Common/ChevronForm";
 export default function Bottom() {
     return (
     <div className = {"flex flex-col lg:items-center lg:justify-center"}>
-        <div className = {"lg:w-2/3"}>
+        <div className = {"xl:w-2/3"}>
             <Team/>
             <Gap/>
             <Contact/>

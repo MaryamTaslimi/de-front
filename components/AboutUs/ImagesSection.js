@@ -11,9 +11,9 @@ export default function ImagesSection() {
                 <p className = {"text-justify font-light text-shades-10 text-2xl md:text-4xl"}>تیم ما، خدمات تخصصی خود را به ۳ گروه
                     مختلف ارائه می‌کند:</p>
             </div>
-            <div className = {"flex flex-col lg:flex-row justify-between gap-8"}>
+            <div className = {"flex flex-col xl:flex-row justify-between gap-8"}>
 
-                <div className = {styles.imageBg1 + " h-[90vh] lg:h-[65vh] flex flex-col p-4 justify-end items-start gap-4 md:gap-16"}>
+                <div className = {styles.imageBg1 + " h-[90vh] xl:h-[65vh] flex flex-col p-4 justify-end items-start gap-4"}>
                     <p className = {"text-lg md:text-2xl text-shades-10 font-light"}>
                         سرمایه‌گذاران حقیقی و حقوقی، شتاب‌دهنده‌ها <br/>و<br/>
                         سرمایه‌گذاران خطرپذیر
@@ -30,7 +30,7 @@ export default function ImagesSection() {
                     </Link>
                 </div>
 
-                <div className = {styles.imageBg2 + " h-[90vh] lg:h-[65vh] flex flex-col p-4 justify-end items-start gap-4 md:gap-16"}>
+                <div className = {styles.imageBg2 + " h-[90vh] lg:h-[65vh] flex flex-col p-4 justify-end items-start gap-4"}>
                     <p className = {"text-lg md:text-2xl text-shades-10 font-light"}>
                         صاحبان کسب‌وکارها
                         <br className = {"hidden md:block"}/>
@@ -47,10 +47,11 @@ export default function ImagesSection() {
                     </Link>
                 </div>
 
-                <div className = {styles.imageBg3 + " h-[90vh] lg:h-[65vh] flex flex-col p-4 justify-end items-start gap-4 md:gap-16"}>
+                <div className = {styles.imageBg3 + " h-[90vh] lg:h-[65vh] flex flex-col p-4 justify-end items-start gap-4"}>
                     <p className = {"text-lg md:text-2xl text-shades-10 font-light"}>
                         شرکت‌های دانش‌بنیان، ایده‌پردازان و
                         گروه‌های استارتاپی
+                        <br className = {"hidden md:block"}/>
                         <br className = {"hidden md:block"}/>
                         <br className = {"hidden md:block"}/>
                     </p>

@@ -13,9 +13,9 @@ const items = [
 export default function MainFormContainer() {
     return (
         <div>
-            <div className = {styles.formContainer + " flex items-end justify-center pb-24"}>
-                <div className = {" lg:w-2/3 flex flex-row justify-between items-center gap-8"}>
-                    <div className = {" relative flex flex-col gap-10 shrink"}>
+            <div className = {styles.formContainer + " hidden lg:flex items-end justify-center xl:pb-32"}>
+                <div className = {" xl:w-2/3 px-20 xl:px-0 flex flex-row justify-between items-center gap-8"}>
+                    <div className = {" relative flex flex-col gap-10"}>
                         <div className = {"flex flex-row items-center gap-4"}>
                             <img src = "/common/h0.png" className = {"w-12 z-10"}/>
                             <p className = {styles.gradientText + " font-light text-2xl text-shades-10"}>شروع همکاری در
@@ -46,6 +46,39 @@ export default function MainFormContainer() {
                     <MainForm/>
                 </div>
             </div>
+
+
+            <div className={" lg:hidden"}>
+                <div className = {styles.formContainerMobile + " flex items-end justify-center px-4"}>
+                    <div className = {"flex flex-col gap-10 pb-6"}>
+                        <div className = {"flex flex-row items-center gap-4"}>
+                            <img src = "/common/h0.png" className = {"w-12 z-10"}/>
+                            <p className = {styles.gradientText + " font-light text-2xl text-shades-10"}>شروع همکاری در
+                                ۳
+                                گام</p>
+                        </div>
+
+                        <div className = {"flex flex-col gap-10"}>
+                            {
+                                items.map((item) => {
+                                        return (
+                                            <div key = {item}
+                                                 className = {"flex flex-row items-center gap-4"}>
+                                                <img src = {item.src} className = {" w-12 z-10"}/>
+                                                <p className = {"font-light text-sm md:text-lg text-primary"}>
+                                                    {item.title}
+                                                </p>
+                                            </div>
+                                        )
+                                    }
+                                )
+                            }
+                        </div>
+                    </div>
+                </div>
+                <MainForm/>
+            </div>
+
         </div>
 
     )

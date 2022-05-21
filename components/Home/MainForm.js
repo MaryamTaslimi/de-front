@@ -44,9 +44,9 @@ export default function MainForm() {
     }
 
     return (
-        <div className = "w-full max-w-lg bg-shades-10 rounded-sm border-2 border-form-grey" id = {"form"}>
-            <p className = {"bg-accent text-center text-shades-100 text-2xl font-light py-4 px-8"}>ثبت نام</p>
-            <div className = {"px-8"}>
+        <div className = "w-full lg:max-w-lg -mt-4 md:mt-0 bg-shades-10 rounded-sm border-2 border-form-grey ">
+            <p className = {"bg-accent text-center text-shades-100 text-2xl font-light py-4 px-4 sm:px-8"}>ثبت نام</p>
+            <div className = {"px-4 sm:px-8"}>
                 <p className = {"text-shades-80 text-justify text-base font-light my-6"}>ما همراه گروه های مختلفی از
                     بازیگران
                     صنعت در زمینه‌های مختلف همکاری و پروژه های مشترک داریم.
@@ -78,7 +78,7 @@ export default function MainForm() {
                                 className = {"text-form-grey text-md"}/>
                         </div>
 
-                        <div className = "bg-shades-20 flex flex-col gap-4 pr-8 py-6">
+                        <div className = "bg-shades-20 flex flex-col gap-4 px-2 md:pr-8 py-6">
                             <div className = "flex flex-row">
                                 <input
                                     className = "rounded-full accent-accent h-4 w-4 border border-form-grey checked:bg-accent hover:bg-accent focus:outline-none focus:ring-accent-50 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
