@@ -19,7 +19,9 @@ const socialMedia = [
 
 export default function Footer() {
     return (
-        <div className = {"relative bg-shades-10 grid grid-cols-4 px-24 py-9"}>
+        <div>
+
+        <div className = {"hidden lg:grid grid-cols-4 relative bg-shades-10 px-20 py-9"}>
             <div className = {"flex flex-col gap-6"}>
                 {navigation.map((item) => (
                     <Link key = {item.name} href = {item.href}>
@@ -61,6 +63,10 @@ export default function Footer() {
                 <p className = {"font-light text-xs text-[#79A505] text-center"}>اجرا از شرکت راهکار تجارت الکترونیک
                     سلیم</p>
             </div>
+
+        </div>
+
+
 
         </div>
     )
