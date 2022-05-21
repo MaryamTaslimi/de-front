@@ -28,7 +28,7 @@
     transition: opacity 0.5s linear;
 }
 
-.img, .logo {
+.img{
     filter: grayscale(100%);
 }
 

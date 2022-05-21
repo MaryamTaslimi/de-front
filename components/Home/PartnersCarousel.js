@@ -20,9 +20,9 @@ export default function PartnersCarousel() {
                 <div className = {"flex flex-row gap-24 whitespace-nowrap px-6"}>
                     {items.map((item) => (
                         <div key = {item.name}
-                             className = {"w-24 flex flex-col justify-end items-center gap-4 inline-block"}>
+                             className = {"w-20 md:w-24 flex flex-col justify-end items-center gap-4 inline-block"}>
                             <img src = {item.src}
-                                 className = {item.className + " " + styles.logo + " opacity-25 duration-700 ease-out hover:opacity-100 hover:filter-none"}/>
+                                 className = {item.className + " md:grayscale md:opacity-25 duration-700 ease-out hover:opacity-100 hover:filter-none"}/>
                             <p className = {" text-white font-light text-base"}>{item.name}</p>
                         </div>
                     ))}
