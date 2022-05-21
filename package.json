@@ -29,6 +29,7 @@
     "tailwindcss-rtl": "^0.9.0"
   },
   "devDependencies": {
+    "@heroicons/react": "^1.0.6",
     "@tailwindcss/forms": "^0.5.1",
     "autoprefixer": "^10.4.7",
     "axios": "^0.27.2",

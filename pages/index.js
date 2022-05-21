@@ -24,7 +24,7 @@ export default function Home() {
                 </Head>
                 <Hero/>
                 <main className = {styles.main + " relative"}>
-                    <div className = {"py-12 px-6 sm:px-20"}>
+                    <div className = {"py-12 px-4 md:px-20"}>
                         <Gear top = {"top-0"} x = {"left-[0]"} size = {"w-[40rem]"}/>
                         <Gear top = {"top-[37rem]"} x = {"-left-[10rem]"} size = {"w-[30rem]"}/>
                         <Gear top = {"top-[35rem]"} x = {"left-[19rem]"} size = {"w-[50vw]"}/>
