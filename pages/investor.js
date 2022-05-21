@@ -22,7 +22,7 @@ export default function Investor() {
                 <HeroInner number = {1} title = {"سرمایه‌گذاران"}
                            body = {"سرمایه‌گذاران حقیقی و حقوقی،شتاب‌دهنده‌ها وسرمایه‌گذاران خطرپذیر"}/>
                 <main className = {styles.main}>
-                    <div className = {"py-12 px-6 sm:px-20"}>
+                    <div className = {"py-6 px-4 md:px-20 md:py-12"}>
                         <Gap/>
                         <MainText/>
                         <Gap/>
