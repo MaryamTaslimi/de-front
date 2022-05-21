@@ -14,7 +14,7 @@ export default function MainText() {
             <div className = {"flex flex-col justify-between items-stretch w-1/2 pl-8 border-l-2 border-shades-60"}>
                 <div className = {"flex flex-col gap-8 min-h-[90vh]"}>
                     <p className = {"text-right font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-6"}>سرمایه‌پذیر</p>
-                    <p className = {"text-justify font-light text-shades-10 text-lg"}>
+                    <p className = {"text-justify font-light text-shades-10 text-sm md:text-lg"}>
                         جابون نام یک استارتاپ با محوریت فناوری‌های پوشیدنی بود که لوازم جانبی مختلفی از جمله هندزفری
                         بلوتوثی، دستبند هوشمند و غیره را عرضه می‌کرد. این شرکت با وجود ایده‌های خلاقانه، تیم قوی و جذب
                         سرمایه‌ی کلان، در سال 1396 شکست خورد و به طلبکارانش واگذار شد. تحلیلگران حوزه فناوری یکی از
@@ -29,7 +29,7 @@ export default function MainText() {
                     <div
                         className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6 mb-8"}>
                         <img src = {"/startup/icon0.png"} className = {" w-16"}/>
-                        <p className = {"text-center font-light text-shades-10 text-4xl"}>شرایط پذیرش استارتاپ</p>
+                        <p className = {"text-center font-light text-shades-10 text-2xl md:text-4xl"}>شرایط پذیرش استارتاپ</p>
                     </div>
                     <div className = {"flex flex-col gap-4"}>
                         {
@@ -49,7 +49,7 @@ export default function MainText() {
             <div className = {"flex flex-col w-1/2 pr-8"}>
                 <div className = {"invisible flex flex-col gap-8"}>
                     <p className = {"text-right font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-6"}>سرمایه‌پذیر</p>
-                    <p className = {"text-justify font-light text-shades-10 text-lg"}>
+                    <p className = {"text-justify font-light text-shades-10 text-sm md:text-lg"}>
                         جابون نام یک استارتاپ با محوریت فناوری‌های پوشیدنی بود که لوازم جانبی مختلفی از جمله هندزفری
                         بلوتوثی، دستبند هوشمند و غیره را عرضه می‌کرد. این شرکت با وجود ایده‌های خلاقانه، تیم قوی و جذب
                         سرمایه‌ی کلان، در سال 1396 شکست خورد و به طلبکارانش واگذار شد. تحلیلگران حوزه فناوری یکی از
@@ -61,7 +61,7 @@ export default function MainText() {
                 </div>
 
                 <div className = {"flex flex-col gap-8"}>
-                    <p className = {"text-center font-light text-shades-10 text-4xl border-b-2 border-shades-60 pb-6"}>چرا
+                    <p className = {"text-center font-light text-shades-10 text-2xl md:text-4xl border-b-2 border-shades-60 pb-6"}>چرا
                         مرکز نوآوری دنیای اقتصاد؟</p>
                     <p className = {"text-justify font-light text-shades-10 text-2xl"}>
                         مرکز نوآوری و کسب‌وکار دیجیتال دنیای اقتصاد با بررسی بازار هدف شما، تزریق سرمایه به‌صورت

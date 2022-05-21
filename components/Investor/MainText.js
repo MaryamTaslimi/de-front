@@ -5,7 +5,7 @@ export default function MainText() {
                 <div className = {"flex flex-col gap-8 min-h-[90vh]"}>
                     <p className = {"text-right font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-6"}>چرا
                         سرمایه‌گذاری؟</p>
-                    <p className = {"text-justify font-light text-shades-10 text-lg"}>
+                    <p className = {"text-justify font-light text-shades-10 text-sm md:text-lg"}>
                         نوکیا؛ غول تلفن‌های همراه این تصور را داشت که مردم گوشی‌های صفحه لمسی را نمی‌پذیرند؛ بنابراین به
                         طرح صفحه‌کلید QWERTY خود ادامه داد. نوکیا هرگز با تکنولوژی و روندهای در حال تغییر همگام نشد و
                         توجه زیادی به مجموعه نرم‌افزاری خود نداشت و پس از درک روند بازار، سیستم‌عامل خود را معرفی کرد
@@ -20,7 +20,7 @@ export default function MainText() {
                 </div>
 
                 <div className = {"flex flex-col gap-8"}>
-                    <p className = {"text-center font-light text-shades-10 text-4xl border-b-2 border-shades-60 pb-6"}>چرا
+                    <p className = {"text-center font-light text-shades-10 text-2xl md:text-4xl border-b-2 border-shades-60 pb-6"}>چرا
                         مرکز نوآوری دنیای اقتصاد؟</p>
                     <p className = {"text-justify font-light text-shades-10 text-2xl"}>
 
@@ -36,7 +36,7 @@ export default function MainText() {
                 <div className = {"invisible flex flex-col gap-8"}>
                     <p className = {"text-right font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-6"}>چرا
                         سرمایه‌گذاری؟</p>
-                    <p className = {"text-justify font-light text-shades-10 text-lg"}>نوکیا؛ غول تلفن‌های همراه این تصور
+                    <p className = {"text-justify font-light text-shades-10 text-sm md:text-lg"}>نوکیا؛ غول تلفن‌های همراه این تصور
                         را داشت که مردم گوشی‌های صفحه لمسی را نمی‌پذیرند؛ بنابراین به طرح صفحه‌کلید QWERTY خود ادامه
                         داد. نوکیا هرگز با تکنولوژی و روندهای در حال تغییر همگام نشد و توجه زیادی به مجموعه نرم‌افزاری
                         خود نداشت و پس از درک روند بازار، سیستم‌عامل خود را معرفی کرد اما خیلی دیر بود و اپل و سامسونگ
@@ -51,7 +51,7 @@ export default function MainText() {
                 <div className = {"flex flex-col gap-8"}>
                     <p className = {"text-right font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-6"}>سرمایه‌گذاری
                         خطرپذیر چیست؟ </p>
-                    <p className = {"text-justify font-light text-shades-10 text-lg"}>
+                    <p className = {"text-justify font-light text-shades-10 text-sm md:text-lg"}>
                         سرمایه‌گذاری خطرپذیر (Venture Capital) نوعی سرمایه‌گذاری با ریسک بالاست که بر روی ایده‌های
                         خلاقانه و استارتاپ‌های نوپا با پتانسیل رشد انجام می‌شود. در این نوع سرمایه‌گذاری در صورت شکست
                         ایده یا استارتاپ، بازگشت پولی وجود ندارد و به همین دلیل به آن<span className = {"text-accent"}> سرمایه‌گذاری جسورانه یا سرمایه‌گذاری کارآفرینی</span> نیز

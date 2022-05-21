@@ -24,7 +24,7 @@ export default function Path() {
                 <div
                     className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6"}>
                     <img src = {"/common/h0.png"} className = {"w-12"}/>
-                    <p className = {"text-justify font-light text-shades-10 text-4xl"}>مسیر همکاری سرمایه‌گذاران</p>
+                    <p className = {"text-justify font-light text-shades-10 text-2xl md:text-4xl"}>مسیر همکاری سرمایه‌گذاران</p>
                 </div>
                 <div className = {"flex flex-row justify-between flex-wrap gap-16 mt-16"}>
                     <Stack title = {"پرکردن فرم و مشاوره تخصصی"} src = {"/common/h1.png"} color = {1} bodyItems = {col1}/>

@@ -11,10 +11,10 @@ const socialMedia = [
 
 export default function Contact() {
     return (
-        <div className = {"flex flex-row gap-8 border-r border-shades-60 justify-between"}>
+        <div className = {"flex flex-col md:flex-row gap-8 justify-between items-center"}>
 
-            <div className = {"flex flex-col gap-9 pr-10"}>
-                <p className = {"text-white text-2xl font-light"}>ارتباط با ما</p>
+            <div className = {"flex flex-col gap-9 md:pr-10 md:border-r-2 md:border-shades-60"}>
+                <p className = {"text-white text-2xl font-light border-b-2 border-shades-60 md:border-none pb-4 md:pb-0"}>ارتباط با ما</p>
                 <div className = {"flex flex-row items-center"}>
                     <LocalPhoneSharpIcon className = {"text-white ml-4"}/>
                     <a
@@ -65,7 +65,8 @@ export default function Contact() {
             <iframe
                 src = "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1734.7965597631865!2d51.4166838199605!3d35.723385946331696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdonyaye%20eghtesad%20publisher!5e0!3m2!1sen!2s!4v1652739792148!5m2!1sen!2s"
                 width = "450" height = "450" style = {{border: 0}} allowFullScreen = "" loading = "lazy"
-                referrerPolicy = "no-referrer-when-downgrade"/>
+                referrerPolicy = "no-referrer-when-downgrade"
+            />
         </div>
     )
 }

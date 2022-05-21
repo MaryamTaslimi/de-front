@@ -18,17 +18,17 @@ export default function Mission() {
             <div
                 className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6 mb-8"}>
                 <img src = {"/about/mission.png"} className = {"brightness-0 invert w-16 mr-4"}/>
-                <p className = {"text-justify font-light text-shades-10 text-4xl"}>ماموریت</p>
+                <p className = {"text-justify font-light text-shades-10 text-2xl md:text-4xl"}>ماموریت</p>
             </div>
             <div className = {"flex flex-col gap-16"}>
 
-                <p className = {"text-justify font-light text-shades-20 text-lg"}>
+                <p className = {"text-justify font-light text-shades-20 text-sm md:text-lg"}>
                     باتوجه‌به پیشرفت علم و افزایش رقابت میان کسب‌وکارها، ما باور داریم که برای ماندگاری و به‌دست‌آوردن
                     سهم
                     بازار، راهی به جز <span className = {"text-accent"}>نوآوری و استفاده از فناوری </span>موجود نیست.
                 </p>
 
-                <div className = {"flex flex-row justify-start gap-52"}>
+                <div className = {"flex flex-col lg:flex-row justify-start gap-24 lg:gap-52"}>
                     <MissionStack
                         title = {1} bodyItems = {stack1}/>
 
@@ -37,7 +37,7 @@ export default function Mission() {
                         bodyItems = {stack2}/>
                 </div>
 
-                <p className = {"text-justify font-light text-shades-20 text-lg"}>
+                <p className = {"text-justify font-light text-shades-20 text-sm md:text-lg"}>
                     حسن شهرت مجموعه ما در عرصه اقتصاد و صنعت باعث شده که همه گروه‌های هدف به‌آسانی بتوانند به
                     ما <span className = {"text-accent"}>اعتماد</span> کنند،
                     <br/>

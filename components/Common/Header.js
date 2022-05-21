@@ -14,8 +14,8 @@ const navigation = [
 export default function Header({transparent}) {
     const [hamburger, setHamburger] = useState(false);
     return (
-        <header className = {"py-4 " + (transparent ? "" : "bg-white")}>
-            <nav className = "hidden lg:block px-20" aria-label = "Top">
+        <header className = {"py-4 px-4 md:px-20" + (transparent ? "" : "bg-white")}>
+            <nav className = "hidden lg:block" aria-label = "Top">
                 <div
                     className = "w-full flex items-center justify-between">
                     <div className = "flex space-x-20 items-center z-10">
@@ -49,14 +49,14 @@ export default function Header({transparent}) {
                 </div>
             </nav>
 
-            <div className = {"lg:hidden mx-4"}>
+            <div className = {"lg:hidden"}>
                 <div className = {"flex flex-row items-center justify-between"}>
                     <div className = {"flex flex-row items-center align-start"}>
                         <Link href = "/">
                             <a className = "ml-2 sm:ml-8">
                                 <span className = "sr-only">مرکز فناوری دنیای اقتصاد</span>
                                 <img
-                                    className = "h-12 w-auto"
+                                    className = "h-14 w-auto"
                                     src = "/common/logo.png"
                                     alt = ""
                                 />

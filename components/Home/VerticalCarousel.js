@@ -18,7 +18,7 @@ export default function VerticalCarousel() {
                 {items.map((item) => (
                     <div key = {item.name} className={"py-2"}>
                         <p
-                           className = {"text-4xl font-light text-secondary"}>
+                           className = {"text-2xl md:text-4xl font-light text-secondary"}>
                             {item.name}
                         </p>
                     </div>

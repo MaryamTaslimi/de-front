@@ -24,7 +24,7 @@ export default function HeroInner({number, title, body}) {
                 <Header transparent = {true}/>
                 <div className = "flex flex-col gap-16 py-14 px-6 sm:px-20">
                     <p className={"font-light text-6xl text-shades-10"}>{title}</p>
-                    <p className={"font-light text-4xl text-shades-10"}>{body}</p>
+                    <p className={"font-light text-2xl md:text-4xl text-shades-10"}>{body}</p>
 
                 </div>
             </div>

@@ -24,7 +24,7 @@ export default function AboutUs() {
                 </Head>
                 <Header transparent = {true}/>
                 <main className = {styles.main}>
-                    <div className = {"py-12 px-6 sm:px-20"}>
+                    <div className = {"py-12 px-4 md:px-20"}>
                         <AboutHero/>
                         <Gap/>
                         <Mission/>

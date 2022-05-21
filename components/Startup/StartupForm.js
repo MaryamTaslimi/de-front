@@ -152,7 +152,7 @@ export default function StartupForm() {
 
                     <div className = "flex items-center justify-center my-8">
                         <button
-                            className = "bg-accent text-lg text-shades-100 font-light py-2 px-12 rounded-sm focus:outline-none"
+                            className = "bg-accent text-sm md:text-lg text-shades-100 font-light py-2 px-12 rounded-sm focus:outline-none"
                             type = "button"
                             onClick = {() => {
                                 submitForm()

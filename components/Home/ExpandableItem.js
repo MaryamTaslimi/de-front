@@ -9,7 +9,7 @@ export default function ExpandableItem({title, body, src}) {
 
                 <div
                     className = {"expandable absolute left-1/2 px-8 w-96 flex flex-col justify-center items-center text-primary z-20 transition duration-700 filter-none " + (hover ? " opacity-100 -translate-x-1/2" : " opacity-0")}>
-                    <p className = {"expandable mb-2 text-shades-80 font-light text-lg"}>{title}</p>
+                    <p className = {"expandable mb-2 text-shades-80 font-light text-sm md:text-lg"}>{title}</p>
                     <p className = {"expandable border-t-2 border-shades-60 text-center text-2xl pt-4"}>{body}</p>
                 </div>
 

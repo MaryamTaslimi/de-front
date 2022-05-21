@@ -8,9 +8,9 @@ export default function ServicesBox() {
                 <p className = {"text-5xl font-light text-white -mr-56"}>چه خدماتی ارائه می‌دهیم</p>
             </div>
             <div className = {"flex flex-row items-center mr-80 -mt-8"}>
-                <p className = {"text-4xl font-light text-white"}>ما به شما در</p>
+                <p className = {"text-2xl md:text-4xl font-light text-white"}>ما به شما در</p>
                 <VerticalCarousel/>
-                <p className = {"text-4xl font-light text-white"}>کمک می‌کنیم.</p>
+                <p className = {"text-2xl md:text-4xl font-light text-white"}>کمک می‌کنیم.</p>
 
             </div>
         </div>
