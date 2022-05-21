@@ -6,7 +6,7 @@ export default function Services() {
         <div className = {"flex flex-col"}>
             <div className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6 mb-8"}>
                 <img src = {"/about/services.png"} className = {" w-16"}/>
-                <p className = {"text-justify font-light text-shades-10 text-2xl md:text-4xl"}>خدمات نوآوری و کسب‌وکار</p>
+                <p className = {"text-right font-light text-shades-10 text-2xl md:text-4xl"}>خدمات نوآوری و کسب‌وکار</p>
             </div>
             <div className = {"flex flex-col lg:flex-row gap-12"}>
                 <div className = {"flex flex-col gap-8  lg:w-1/2"}>
