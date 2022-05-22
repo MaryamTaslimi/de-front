@@ -11,14 +11,14 @@ export default function VerticalCarousel() {
 
     ]
     return (
-        <div className={"px-3"}>
+        <div className={"px-3 "}>
             <Carousel showIndicators = {false} infiniteLoop = {true} interval = {1500} showArrows = {false}
                       showThumbs = {false} autoPlay = {true} axis = {'vertical'} showStatus = {false}
                       showStatusText = {false} dynamicHeight={true} stopOnHover={true} width={"fit-content"}>
                 {items.map((item) => (
-                    <div key = {item.name} className={"py-2"}>
+                    <div key = {item.name} className={"py-3 xl:py-2"}>
                         <p
-                           className = {"text-2xl md:text-4xl font-light text-secondary"}>
+                           className = {"text-2xl xl:text-4xl font-light text-secondary"}>
                             {item.name}
                         </p>
                     </div>
