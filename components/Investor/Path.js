@@ -29,7 +29,7 @@ export default function Path() {
                 <div className = {"flex flex-row justify-between flex-wrap gap-16 mt-16"}>
                     <Stack title = {"پرکردن فرم و مشاوره تخصصی"} src = {"/common/h1.png"} color = {1} bodyItems = {col1}/>
                     <Stack title = {"عقد قرارداد"} src = {"/common/h2.png"} color = {2} bodyItems = {col2}/>
-                    <Stack title = {"مدیریت و همراهی پروژه"} src = {"/common/h3.png"} color = {3} bodyItems = {col3} className={"basis-1/5"}/>
+                    <Stack title = {"مدیریت و همراهی پروژه"} src = {"/common/h3.png"} color = {3} bodyItems = {col3}/>
                 </div>
 
             </div>

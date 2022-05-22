@@ -8,7 +8,7 @@ export default function Stack({title, src, color, bodyItems}) {
     switch (color) {
         case 1:
             colorClass.current = "text-shades-40";
-            basis.current = "basis-[30%]"
+            basis.current = "lg:basis-[30%]"
             break;
         case 2:
             colorClass.current = "text-accent-50";

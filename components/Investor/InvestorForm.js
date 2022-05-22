@@ -45,7 +45,7 @@ export default function InvestorForm() {
     }
 
     return (
-        <div className = "w-full max-w-lg bg-shades-10 rounded-sm border-2 border-form-grey" id = {"form"}>
+        <div className = "w-full md:max-w-lg bg-shades-10 rounded-sm border-2 border-form-grey" id = {"form"}>
             <p className = {"bg-accent text-center text-shades-100 text-2xl font-light py-4 px-8"}>فرم ثبت نام
                 سرمایه‌گذاران</p>
             <div className = {"px-8"}>

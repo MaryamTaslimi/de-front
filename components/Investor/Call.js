@@ -5,8 +5,8 @@ export default function Call() {
         <div className = {"bg-accent rounded-sm p-8 flex flex-col"}>
             <div
                 className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 mb-8 pb-8"}>
-                <img src = {"/investor/guarantee.png"} className = {" w-16 mr-4"}/>
-                <p className = {"text-justify font-light text-shades-100 text-2xl"}>تیم مشاوره تخصصی سرمایه‌گذاران</p>
+                <img src = {"/investor/guarantee.png"} className = {" w-16 md:mr-4"}/>
+                <p className = {"text-justify font-light text-shades-100 text-lg md:text-2xl"}>تیم مشاوره تخصصی سرمایه‌گذاران</p>
             </div>
             <p className = {"text-justify font-light text-shades-100 text-sm md:text-lg mb-8"}>سرمایه‌گذاران به دلیل نقش مهم و به سزایی
                 که در ایجاد حرکت و پیشرفت صنعت و اقتصاد کشور دارند، از توجه ویژه و دانش تخصصی تیم حرفه‌ای ما متنفع
