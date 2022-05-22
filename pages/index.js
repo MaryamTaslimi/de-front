@@ -25,6 +25,11 @@ export default function Home() {
                     <link rel = "icon" href = "/common/logo.png"/>
                 </Head>
                 <Hero/>
+
+                <div className = {"lg:hidden"}>
+                    <Header transparent = {true}/>
+                </div>
+
                 <main className = {styles.main + " relative"}>
                     <div className = {"py-4 md:py-12 px-4 md:px-20"}>
                         <MobileHero/>
@@ -32,7 +37,7 @@ export default function Home() {
                         <Gear top = {"top-[37rem]"} x = {"-left-[10rem]"} size = {"w-[30rem]"}/>
                         <Gear top = {"top-[35rem]"} x = {"left-[19rem]"} size = {"w-[50vw]"}/>
                         <Introduction/>
-                            <InfoBox/>
+                        <InfoBox/>
                         <ServicesBox/>
                         <ServicesExpandable/>
                     </div>

@@ -1,8 +1,8 @@
 import styles from "../../styles/Home.module.css";
 import Header from "./Header";
-import HeroText from "../Home/HeroText";
 import Chevron from "./Chevron";
-import {useEffect, useRef} from "react";
+
+import {useRef} from "react";
 
 export default function HeroInner({number, title, body}) {
     const colorClass = useRef(styles.heroContainer);
@@ -20,15 +20,20 @@ export default function HeroInner({number, title, body}) {
 
     return (
         <div className = {"flex flex-col"}>
-            <div className = {colorClass.current + " flex flex-col"}>
+            <div className={"lg:hidden"}>
                 <Header transparent = {true}/>
-                <div className = "flex flex-col gap-16 py-14 px-6 sm:px-20">
-                    <p className={"font-light text-6xl text-shades-10"}>{title}</p>
-                    <p className={"font-light text-2xl md:text-4xl text-shades-10"}>{body}</p>
+            </div>
+            <div className = {colorClass.current + " min-h-[45vh] md:min-h-[75vh] flex flex-col justify-end lg:justify-start"}>
+                <div className={"hidden lg:block"}>
+                    <Header transparent = {true}/>
+                </div>
 
+                <div className = "flex flex-col gap-16 py-6 md:py-12 px-4 md:px-20">
+                    <p className={"hidden md:block font-light text-4xl lg:text-6xl text-shades-10"}>{title}</p>
+                    <p className={"font-light text-lg lg:text-2xl text-shades-10 text-center md:text-right"}>{body}</p>
                 </div>
             </div>
-            <div>
+            <div className={"hidden lg:block"}>
                 <Chevron/>
                 <Chevron/>
             </div>

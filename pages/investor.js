@@ -9,6 +9,7 @@ import Bottom from "../components/Investor/Bottom";
 import Path from "../components/Investor/Path";
 import InvestorFormContainer from "../components/Investor/InvestorFormContainer";
 import ChevronForm from "../components/Common/ChevronForm";
+import Header from "../components/Common/Header";
 
 export default function Investor() {
     return (
@@ -21,6 +22,7 @@ export default function Investor() {
                 </Head>
                 <HeroInner number = {1} title = {"سرمایه‌گذاران"}
                            body = {"سرمایه‌گذاران حقیقی و حقوقی،شتاب‌دهنده‌ها وسرمایه‌گذاران خطرپذیر"}/>
+
                 <main className = {styles.main}>
                     <div className = {"py-6 px-4 md:px-20 md:py-12"}>
                         <Gap/>
