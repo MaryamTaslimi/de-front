@@ -5,7 +5,7 @@ import PartnershipForm from "../Partnership/PartnershipForm";
 export default function StartupFormContainer() {
     return (
         <div>
-            <div className = {styles.formContainer + " hidden min-h-[130vh] md:flex items-end justify-center pb-24"}>
+            <div className = {styles.formContainer + " hidden min-h-[135vh] md:flex items-end justify-center pb-24"}>
                 <div className = {" flex flex-row justify-between items-center gap-8"}>
                     <StartupForm/>
                 </div>
