@@ -22,9 +22,14 @@ export default function AboutUs() {
                     <meta name = "description" content = "مرکز فناوری دنیای اقتصاد"/>
                     <link rel = "icon" href = "/common/logo.png"/>
                 </Head>
-                <Header transparent = {true}/>
+                <div className={"hidden lg:block"}>
+                    <Header transparent = {true}/>
+                </div>
                 <main className = {styles.main}>
-                    <div className = {"py-6 px-4 md:px-20 md:py-12"}>
+                    <div className = {"py-4 md:py-12 px-4 md:px-20"}>
+                        <div className={"lg:hidden"}>
+                            <Header transparent = {true}/>
+                        </div>
                         <AboutHero/>
                         <Gap/>
                         <Mission/>
