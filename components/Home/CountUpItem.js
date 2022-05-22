@@ -10,7 +10,7 @@ export default function CountUpItem({prefix, number, suffix}) {
                     <div>
                         {isVisible ? <CountUp startVal = {0}
                                               end = {number}
-                                              duration = {7}
+                                              duration = {6}
                                               useEasing = {true}
                                               suffix = {" " + suffix}
                                               prefix = {prefix  + " "}

@@ -14,7 +14,7 @@ const navigation = [
 export default function Header({transparent}) {
     const [hamburger, setHamburger] = useState(false);
     return (
-        <header className = {"py-4 px-4 md:px-20" + (transparent ? "" : "bg-white")}>
+        <header className = {"lg:px-20 lg:py-12" + (transparent ? "" : "bg-white")}>
             <nav className = "hidden lg:block" aria-label = "Top">
                 <div
                     className = "w-full flex items-center justify-between">

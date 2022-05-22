@@ -12,7 +12,7 @@ export default function Gear({top, x, size}) {
         });
     }, []);
     return (
-        <div className = {"absolute " + top + " " + x}>
+        <div className = {"hidden lg:block absolute " + top + " " + x}>
             <img
                 ref = {imageRef}
                 src = "/home/gear.png"
