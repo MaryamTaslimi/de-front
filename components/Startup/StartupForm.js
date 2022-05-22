@@ -49,9 +49,9 @@ export default function StartupForm() {
 
     return (
         <div className = "w-full max-w-lg bg-shades-10 rounded-sm border-2 border-form-grey" id = {"form"}>
-            <p className = {"bg-accent text-center text-shades-100 text-2xl font-light py-4 px-8"}>فرم ثبت نام
+            <p className = {"bg-accent text-center text-shades-100 text-2xl font-light py-4 px-4 sm:px-8"}>فرم ثبت نام
                 سرمایه‌پذیر</p>
-            <div className = {"px-8"}>
+            <div className = {"px-4 sm:px-8"}>
                 <p className = {"text-shades-80 text-justify text-base font-light my-6"}>برای آنکه مسیر همکاری مشترکمان
                     هموارتر شود، میتوانید فرم زیر را پر کنید و منتظر مشاوره تخصصی و رایگان تیم ما باشید!
                 </p>

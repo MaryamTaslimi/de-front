@@ -7,6 +7,7 @@ import MainText from "../components/Partnership/MainText";
 import Gap from "../components/Common/Gap";
 import ChevronForm from "../components/Common/ChevronForm";
 import PartnershipFormContainer from "../components/Partnership/PartnershipFormContainer";
+import MainTextMobile from "../components/Partnership/MainTextMobile";
 
 export default function Partnership() {
     return (
@@ -23,6 +24,7 @@ export default function Partnership() {
                     <div className = {"py-12 px-6 sm:px-20"}>
                         <Gap/>
                         <MainText/>
+                        <MainTextMobile/>
                         <ChevronForm/>
                     </div>
                     <PartnershipFormContainer/>

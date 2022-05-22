@@ -1,16 +1,15 @@
-import ChevronForm from "../Common/ChevronForm";
-
 
 const items = [
     {title: "پر کردن فرم مشاوره", src: "/partnership/icon1.png"},
     {title: "تعیین جلسه معارفه", src: "/partnership/icon2.png"},
     {title: "بررسی شرایط شرکت و انواع روش های همکاری", src: "/partnership/icon3.png"},
     {title: "امضای تفاهم نامه", src: "/partnership/icon4.png"},
-
 ]
+
+
 export default function MainText() {
     return (
-        <div className = {"flex flex-row min-h-[110vh]"}>
+        <div className = {"hidden lg:flex flex-row min-h-[110vh]"}>
             <div className = {"flex flex-col justify-between items-stretch w-1/2 pl-8 border-l-2 border-shades-60"}>
                 <div className = {"flex flex-col gap-8 min-h-[90vh]"}>
                     <p className = {"text-right font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-6"}>شراکت
@@ -29,10 +28,10 @@ export default function MainText() {
                         <img src = {"/partnership/icon0.png"} className = {" w-16"}/>
                         <p className = {"text-center font-light text-shades-10 text-2xl md:text-4xl"}>مسیر همکاری</p>
                     </div>
-                    <div className = {"flex flex-col gap-4"}>
+                    <div className = {"flex flex-col gap-10"}>
                         {
                             items.map(item => (
-                                <div key = {item.title} className = {"flex flex-row items-center gap-4 mt-6"}>
+                                <div key = {item.title} className = {"flex flex-row items-center gap-4"}>
                                     <img src = {item.src} alt = {"icon"} className = {"w-12"}/>
                                     <p className = {"font-light text-2xl text-shades-10"}>{item.title}</p>
                                 </div>
