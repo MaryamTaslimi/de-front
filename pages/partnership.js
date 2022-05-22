@@ -22,7 +22,9 @@ export default function Partnership() {
                            body = {"صاحبان کسب‌وکارها"}/>
                 <main className = {styles.main}>
                     <div className = {"py-12 px-6 sm:px-20"}>
-                        <Gap/>
+                        <div className = {"hidden lg:block"}>
+                            <Gap/>
+                        </div>
                         <MainText/>
                         <MainTextMobile/>
                         <ChevronForm/>

@@ -8,6 +8,7 @@ import Gap from "../components/Common/Gap";
 import ChevronForm from "../components/Common/ChevronForm";
 import StartupFormContainer from "../components/Startup/StartupFormContainer";
 import Path from "../components/Startup/Path";
+import MainTextMobile from "../components/Startup/MainTextMobile";
 
 export default function Startup() {
     return (
@@ -22,8 +23,11 @@ export default function Startup() {
                            body = {"شرکت‌های دانش‌بنیان، ایده‌پردازان و گروه‌های استارتاپی"}/>
                 <main className = {styles.main}>
                     <div className = {"py-12 px-6 sm:px-20"}>
-                        <Gap/>
+                        <div className={"hidden lg:block"}>
+                            <Gap/>
+                        </div>
                         <MainText/>
+                        <MainTextMobile/>
                         <Gap/>
                         <Path/>
                         <ChevronForm/>

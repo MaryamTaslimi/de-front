@@ -8,7 +8,7 @@ export default function Stack({title, src, color, bodyItems}) {
     switch (color) {
         case 1:
             colorClass.current = "text-shades-40";
-            basis.current = "lg:basis-[30%]"
+            basis.current = "xl:basis-[30%]"
             break;
         case 2:
             colorClass.current = "text-accent-50";
@@ -19,7 +19,7 @@ export default function Stack({title, src, color, bodyItems}) {
     }
 
     return (
-        <div className = {"flex flex-col items-start gap-10 " + basis.current}>
+        <div className = {"flex flex-col items-start gap-10 mb-8 " + basis.current}>
             <div className = {"flex flex-row items-center gap-4"}>
                 <img src = {src} className = {"w-12"}/>
                 <p className = {"font-light text-2xl text-shades-10"}>{title}</p>

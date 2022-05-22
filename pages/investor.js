@@ -9,7 +9,6 @@ import Bottom from "../components/Investor/Bottom";
 import Path from "../components/Investor/Path";
 import InvestorFormContainer from "../components/Investor/InvestorFormContainer";
 import ChevronForm from "../components/Common/ChevronForm";
-import Header from "../components/Common/Header";
 import MainTextMobile from "../components/Investor/MainTextMobile";
 
 export default function Investor() {
@@ -26,7 +25,9 @@ export default function Investor() {
 
                 <main className = {styles.main}>
                     <div className = {"py-6 px-4 md:px-20 md:py-12"}>
-                        <Gap/>
+                        <div className = {"hidden lg:block"}>
+                            <Gap/>
+                        </div>
                         <MainText/>
                         <MainTextMobile/>
                         <Gap/>
