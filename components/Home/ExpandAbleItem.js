@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export default function ExpandableItem({title, body, src}) {
+export default function ExpandAbleItem({title, body, src}) {
     const [hover, setHover] = useState(false);
 
     return (
