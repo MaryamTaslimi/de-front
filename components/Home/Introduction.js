@@ -6,7 +6,7 @@ export default function Introduction() {
         <div>
             <div className = {"flex flex-row items-center border-b border-shades-60 pb-4 mb-4 lg:w-3/5"}>
                 <img src = {"/common/logo.png"} alt = {"logo"} className = {"w-16"}/>
-                <p className = {"text-2xl md:text-4xl font-light text-white mr-4"}>مرکز نوآوری و کسب و کار دنیای اقتصاد </p>
+                <p className = {"text-2xl md:text-4xl font-light text-white mr-4"}>خانه خلاق و نوآوری دنیای اقتصاد </p>
             </div>
             <div className = {"flex flex-col lg:flex-row lg:w-3/5 gap-4 lg:gap-8"}>
                 <p className = {"text-sm md:text-base font-light text-white grow-0 self-stretch text-justify"}>خانه خلاق و نوآوری دنیای اقتصاد، با تکیه بر

@@ -55,8 +55,10 @@ export default function MainText() {
                 </div>
 
                 <div className = {"flex flex-col gap-8"}>
-                    <p className = {"text-center font-light text-shades-10 text-2xl md:text-4xl border-b-2 border-shades-60 pb-6"}>چرا
-                        مرکز نوآوری دنیای اقتصاد؟</p>
+                    <p className = {"text-center font-light text-shades-10 text-2xl md:text-4xl border-b-2 border-shades-60 pb-6"}>
+
+                        چرا خانه خلاق و نوآوری دنیای اقتصاد؟
+                    </p>
                     <p className = {"text-justify font-light text-shades-10 text-2xl"}>
                         دنیای اقتصاد نیز در راستای خدمت به مشتریان خود و پاسخ به این نیاز ضروری مرکز نوآوری و کسب‌وکار
                         دیجیتال دنیای اقتصاد را تأسیس کرد. بدین ترتیب مرکز نوآوری دنیای اقتصاد به‌عنوان<span className={"text-accent"}> تحلیل‌گر مورد اعتماد کسب‌وکارها</span> و
