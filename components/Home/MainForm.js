@@ -43,7 +43,7 @@ export default function MainForm() {
     }
 
     return (
-        <div className = "w-full lg:max-w-lg -mt-4 md:mt-0 bg-shades-10 rounded-sm border-2 border-form-grey ">
+        <div className = "w-full lg:max-w-lg -mt-4 md:mt-0 bg-shades-10 rounded-sm border-2 border-form-grey " id = {"form"}>
             <p className = {"bg-accent text-center text-shades-100 text-2xl font-light py-4 px-4 sm:px-8"}>ثبت نام</p>
             <div className = {"px-4 sm:px-8"}>
                 <p className = {"text-shades-80 text-justify text-base font-light my-6"}>ما همراه گروه های مختلفی از
