@@ -36,7 +36,7 @@ export default function Contact() {
                     <div className = {"flex flex-col gap-4"}>
                         <a
                             className = {"text-base font-light text-white underline underline-offset-4 decoration-solid"}
-                            href = "mailto:info@de.com">info@de.com</a>
+                            href = "mailto:info@de.vc">info@de.vc</a>
                         <a
                             className = {"text-base font-light text-white underline underline-offset-4 decoration-solid"}
                             href = "mailto:Deic.vc.email@gmail.com">Deic.vc.email@gmail.com</a>

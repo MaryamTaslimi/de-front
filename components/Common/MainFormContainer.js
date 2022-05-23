@@ -5,7 +5,8 @@ import HexagonRoundedIcon from "@mui/icons-material/HexagonRounded";
 
 const items = [
     {title: "فرم ثبت نام را با اطلاعات مورد نیاز پر کنید.", src: "/common/h1.png"},
-    {title: "تیم ما با شما تماس گرفته و مشاوره تخصصی خود را در اختیار شما میگذارد.", src: "/common/h2.png"},
+    {title: "ما با شما تماس می‌گیریم و مراحل همکاری را طراحی می‌کنیم."
+    , src: "/common/h2.png"},
     {title: "همکاری مشترک شروع شد!", src: "/common/h3.png"},
 ]
 

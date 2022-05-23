@@ -36,8 +36,7 @@ export default function MainForm() {
                     console.log(error);
                     return false;
                 })
-        }
-        else {
+        } else {
             alert("وارد کردن نام و شماره همراه الزامی است.")
         }
 
@@ -103,8 +102,8 @@ export default function MainForm() {
                                     type = "radio"
                                     name = "op2"
                                     id = "op2"
-                                    checked = {workArea === "به دنبال سرمایه برای راه اندازی یا نگهداشت استارتاپ یا ایده"}
-                                    value = "به دنبال سرمایه برای راه اندازی یا نگهداشت استارتاپ یا ایده"
+                                    checked = {workArea === "دنبال سرمایه برای توسعه استارتاپ"}
+                                    value = "دنبال سرمایه برای توسعه استارتاپ"
                                     onChange = {(e) =>
                                         setWorkArea(e.target.value)
                                     }
@@ -112,7 +111,7 @@ export default function MainForm() {
                                 <label
                                     className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
                                     htmlFor = "op2">
-                                    به دنبال سرمایه برای راه اندازی یا نگهداشت استارتاپ یا ایده
+                                    دنبال سرمایه برای توسعه استارتاپ
                                 </label>
                             </div>
                             <div className = "flex flex-row">
@@ -121,8 +120,8 @@ export default function MainForm() {
                                     type = "radio"
                                     name = "op3"
                                     id = "op3"
-                                    checked = {workArea === "همکاری استراتژیک و راهبردی در انجام پروژه‌ها"}
-                                    value = "همکاری استراتژیک و راهبردی در انجام پروژه‌ها"
+                                    checked = {workArea === "همکاری استراتژیک و راهبردی در توسعه کسب و کار"}
+                                    value = "همکاری استراتژیک و راهبردی در توسعه کسب و کار"
                                     onChange = {(e) =>
                                         setWorkArea(e.target.value)
                                     }
@@ -130,7 +129,8 @@ export default function MainForm() {
                                 <label
                                     className = "mr-6 form-check-label inline-block text-shades-100 font-light text-base"
                                     htmlFor = "op3">
-                                    همکاری استراتژیک و راهبردی در انجام پروژه‌ها
+                                    همکاری استراتژیک و راهبردی در توسعه کسب و کار
+
                                 </label>
                             </div>
                             <div className = "flex flex-row">
