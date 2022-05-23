@@ -32,8 +32,10 @@ export default function MainTextMobile() {
                 </div>
 
                 <div className = {"flex flex-col gap-4"}>
-                    <p className = {"text-center font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-2"}>چرا
-                        مرکز نوآوری دنیای اقتصاد؟</p>
+                    <p className = {"text-center font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-2"}>
+
+                        چرا خانه خلاق و نوآوری دنیای اقتصاد؟
+                    </p>
                     <p className = {"text-justify font-light text-shades-10 text-base"}>
 
                         خانه خلاق و نوآوری دنیای اقتصاد با بررسی بازار کنونی شما، کمک به ایجاد برنامه‌ریزی
