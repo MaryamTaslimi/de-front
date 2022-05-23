@@ -64,7 +64,7 @@ export default function MainText() {
                     <p className = {"text-center font-light text-shades-10 text-2xl md:text-4xl border-b-2 border-shades-60 pb-6"}>چرا
                         مرکز نوآوری دنیای اقتصاد؟</p>
                     <p className = {"text-justify font-light text-shades-10 text-2xl"}>
-                        مرکز نوآوری و کسب‌وکار دیجیتال دنیای اقتصاد با بررسی بازار هدف شما، تزریق سرمایه به‌صورت
+                        خانه خلاق و نوآوری دنیای اقتصاد با بررسی بازار هدف شما، تزریق سرمایه به‌صورت
                         برنامه‌ریزی‌شده و تعیین مدیریت پروژه، قصد دارد <span className = {"text-accent"}>ریسک استارتاپ و ایده شما را به حداقل برساند. </span> همچنین
                         باتوجه به اعتبار و بسترهای موجود در گروه رسانه‌ای دنیای اقتصاد در جهت <span
                         className = {"text-accent"}>معرفی برند، محصولات و خدمات</span> شما

@@ -1,6 +1,5 @@
 import styles from "/styles/Home.module.css"
 import PartnershipForm from "./PartnershipForm";
-import InvestorForm from "../Investor/InvestorForm";
 
 export default function PartnershipFormContainer() {
     return (

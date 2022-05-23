@@ -9,10 +9,10 @@ export default function Introduction() {
                 <p className = {"text-2xl md:text-4xl font-light text-white mr-4"}>مرکز نوآوری و کسب و کار دنیای اقتصاد </p>
             </div>
             <div className = {"flex flex-col lg:flex-row lg:w-3/5 gap-4 lg:gap-8"}>
-                <p className = {"text-sm md:text-base font-light text-white grow-0 self-stretch text-justify"}>مرکز نوآوری و کسب‌وکار دیجیتال دنیای اقتصاد، با تکیه بر
+                <p className = {"text-sm md:text-base font-light text-white grow-0 self-stretch text-justify"}>خانه خلاق و نوآوری دنیای اقتصاد، با تکیه بر
                     تجربه، اعتبار و دانش گروه رسانه ای دنیای اقتصاد از سال 1400 فعالیت خود را در حوزه سرمایه‌گذاری
                     خطرپذیر (Venture capital)آغاز کرد. </p>
-                <p className = {"text-base font-light text-white grow self-stretch text-justify"}>اکنون مرکز نوآوری و کسب‌وکار دیجیتال دنیای اقتصاد با
+                <p className = {"text-base font-light text-white grow self-stretch text-justify"}>اکنون خانه خلاق و نوآوری دنیای اقتصاد با
                     شعار «آینده از اینجا شروع می‌شود» قصد دارد تعاملی سازنده میان اشخاص حقیقی و شرکت‌های مستعد
                     سرمایه‌گذاری و دانش‌بنیان‌ها ایجاد کند و پلی میان نظام اقتصادی سنتی و مدرن باشد.
                 </p>

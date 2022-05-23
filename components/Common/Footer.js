@@ -55,7 +55,7 @@ export default function Footer() {
                 </div>
                 <div className = {"flex flex-col items-center justify-center gap-4"}>
                     <div className = {"flex flex-row items-center justify-center gap-6"}>
-                        <img src = {"/common/logo-text.png"} className = {"w-32"} alt = {"logo"}/>
+                        <img src = {"/common/logo-type.png"} className = {"w-32"} alt = {"logo"}/>
                         <img src = {"/home/logo-p5.png"} className = {"w-32"} alt = {"salim logo"}/>
                     </div>
                     <p className = {"font-light text-xs text-shades-60 text-center"}>کلیه حقوق مادی و معنوی این سایت
@@ -140,7 +140,7 @@ export default function Footer() {
 
                 <div className = {"flex flex-col items-center justify-center gap-4"}>
                     <div className = {"flex flex-col-reverse items-center justify-center gap-4"}>
-                        <img src = {"/common/logo-text.png"} className = {"w-32"} alt = {"logo"}/>
+                        <img src = {"/common/logo-type.png"} className = {"w-32"} alt = {"logo"}/>
                         <img src = {"/home/logo-p5.png"} className = {"w-32"} alt = {"salim logo"}/>
                     </div>
                     <p className = {"font-light text-xs text-shades-80 text-center"}>کلیه حقوق مادی و معنوی این سایت

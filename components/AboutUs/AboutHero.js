@@ -2,7 +2,7 @@ export default function AboutHero() {
     return (
 
         <div className = {"flex flex-row justify-center items-center row-span-3 gap-20 mt-12 sm:mt-24"}>
-            <img src = {"/common/logo-text.png"} alt = {"logo"} className = "hidden sm:block max-h-40 w-auto"/>
+            <img src = {"/common/logo-type.png"} alt = {"logo"} className = "hidden sm:block max-h-40 w-auto"/>
             <div className = {"flex flex-col"}>
                 <div
                     className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6 mb-8"}>
@@ -10,7 +10,7 @@ export default function AboutHero() {
                     <p className = {"text-justify font-light text-shades-10 text-2xl md:text-4xl"}>درباره ما</p>
                 </div>
                 <p className = {"text-justify font-light text-shades-20 text-sm md:text-lg"}>
-                    مرکز نوآوری و کسب‌وکار دیجیتال دنیای اقتصاد از سال ۱۴۰۰ فعالیت خود را در<span
+                    خانه خلاق و نوآوری دنیای اقتصاد از سال ۱۴۰۰ فعالیت خود را در<span
                     className = {"text-accent"}> حوزه سرمایه‌گذاری خطرپذیر (Venture capital)  </span> آغاز
                     کرده است. این مرکز یکی از زیرمجموعه‌های <span className = {"text-secondary-50"}>گروه رسانه‌ای دنیای اقتصاد</span> به
                     شمار می‌رود.
@@ -23,11 +23,11 @@ export default function AboutHero() {
                     و
                     تجربه رسانه‌ای و اقتصادی خود و همچنین بهره‌گیری از اعتبار خود در حوزه‌های خصوصی یا دولتی، خدمات
                     و
-                    کارآمدی را برای مشتریان خود افزایش دهد و بدین منظور مرکز نوآوری و کسب‌وکار دیجیتال دنیای اقتصاد
+                    کارآمدی را برای مشتریان خود افزایش دهد و بدین منظور خانه خلاق و نوآوری دنیای اقتصاد
                     را
                     راه‌اندازی کرد.
                     <br/>
-                    اکنون مرکز نوآوری و کسب‌وکار دیجیتال دنیای اقتصاد با
+                    اکنون خانه خلاق و نوآوری دنیای اقتصاد با
                     شعار <span className = {"text-accent"}>«آینده از اینجا شروع می‌شود»</span> قصد دارد تعاملی
                     سازنده
                     میان اشخاص حقیقی و شرکت‌های

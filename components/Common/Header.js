@@ -24,7 +24,7 @@ export default function Header({transparent}) {
                                 <span className = "sr-only">مرکز فناوری دنیای اقتصاد</span>
                                 <img
                                     className = "h-12 w-auto"
-                                    src = "/common/logo-text.png"
+                                    src = "/common/logo-type.png"
                                     alt = ""
                                 />
                             </a>
