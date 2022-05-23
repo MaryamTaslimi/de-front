@@ -50,7 +50,7 @@ export default function MainFormContainer() {
 
 
             <div className={"lg:hidden"}>
-                <div className = {styles.formContainerMobile + " flex items-end justify-center px-4"}>
+                <div className = {styles.formContainerMobile + " flex items-end justify-center px-4" } id={"formMobile"}>
                     <div className = {"flex flex-col gap-8 pb-10"}>
                         <div className = {"flex flex-row items-center gap-4"}>
                             <img src = "/common/h0.png" className = {"w-12 z-10"}/>

@@ -12,7 +12,7 @@ export default function PartnershipFormContainer() {
 
             <div className = {"md:hidden pb-24 "}>
                 <img src={"/common/papercut-mobile.png"} className={"object-none"}/>
-                <div className = {" flex flex-col justify-between items-center gap-8 bg-shades-10 pb-4"}>
+                <div className = {" flex flex-col justify-between items-center gap-8 bg-shades-10 pb-4"} id={"formMobile"}>
                     <PartnershipForm/>
                 </div>
             </div>

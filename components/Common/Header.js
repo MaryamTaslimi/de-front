@@ -42,7 +42,7 @@ export default function Header({transparent}) {
                     <div className = "z-10">
                         <a
                             href = "#form"
-                            className = "z-10 inline-block bg-accent py-2 px-10 border border-transparent rounded-sm text-base font-light text-black hover:bg-opacity-75"
+                            className = "z-10 inline-block bg-accent py-2 px-10 border border-transparent rounded-sm text-base font-light text-black"
                         >
                             همکاری با ما </a>
                     </div>
@@ -70,8 +70,8 @@ export default function Header({transparent}) {
 
                     {!hamburger ? <div className = "z-10">
                         <a
-                            href = "#form"
-                            className = "z-10 inline-block bg-accent py-1.5 px-10 border border-transparent rounded-sm text-base font-light text-black hover:bg-opacity-75"
+                            href = "#formMobile"
+                            className = "z-10 inline-block bg-accent py-1.5 px-10 border border-transparent rounded-sm text-base font-light text-black"
                         >
                             همکاری با ما </a>
                     </div> : <CloseIcon className = {"text-white"} sx = {{fontSize: 35}}
@@ -102,7 +102,7 @@ export default function Header({transparent}) {
                             ))}
                             <div className = "z-10">
                                 <a
-                                    href = "#form"
+                                    href = "#formMobile"
                                     className = "z-10 inline-block bg-accent py-1.5 px-10 border border-transparent rounded-sm text-base font-light text-black hover:bg-opacity-75"
                                 >
                                     همکاری با ما </a>
