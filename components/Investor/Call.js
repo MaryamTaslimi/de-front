@@ -11,7 +11,7 @@ export default function Call() {
             <p className = {"text-justify font-light text-shades-100 text-sm md:text-lg mb-8"}>سرمایه‌گذاران به دلیل نقش مهم و به سزایی
                 که در ایجاد حرکت و پیشرفت صنعت و اقتصاد کشور دارند، از توجه ویژه و دانش تخصصی تیم حرفه‌ای ما متنفع
                 هستند. برای دریافت مشاوره در زمینه سرمایه گذاری با تماس بگیرید.</p>
-            <a href = "https://wa.me/093861575703" className = {"self-end"}>
+            <a href = "tel:02187762743" className = {"self-end"}>
                 <div className = {"flex flex-row items-center gap-6"}>
                     <p className = {"text-sm md:text-lg text-shades-100 font-light"}>دریافت مشاوره</p>
                     <KeyboardDoubleArrowLeft className = {"text-shades-100"} sx = {{fontSize: 25}}/>
