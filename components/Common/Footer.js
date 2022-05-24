@@ -60,8 +60,7 @@ export default function Footer() {
                     </div>
                     <p className = {"font-light text-xs text-shades-60 text-center"}>کلیه حقوق مادی و معنوی این سایت
                         متعلق
-                        به مرکز
-                        نوآوری و کسب و کار دیجیتال دنیای اقتصاد می‌باشد.</p>
+                        به خانه خلاق و نوآوری دنیای اقتصاد می‌باشد.</p>
                     <p className = {"font-light text-xs text-[#79A505] text-center"}>اجرا از شرکت راهکار تجارت الکترونیک
                         سلیم</p>
                 </div>
@@ -145,8 +144,7 @@ export default function Footer() {
                     </div>
                     <p className = {"font-light text-xs text-shades-80 text-center"}>کلیه حقوق مادی و معنوی این سایت
                         متعلق
-                        به مرکز
-                        نوآوری و کسب و کار دیجیتال دنیای اقتصاد می‌باشد.</p>
+                        به خانه خلاق و نوآوری دنیای اقتصاد می‌باشد.</p>
                     <p className = {"font-light text-xs text-[#79A505] text-center"}>اجرا از شرکت راهکار تجارت الکترونیک
                         سلیم</p>
                 </div>
