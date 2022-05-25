@@ -5,7 +5,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 export default function CountUpItem({prefix, number, suffix}) {
     return (
         <div>
-            <VisibilitySensor partialVisibility offset = {{bottom: 200}}>
+            <VisibilitySensor partialVisibility offset = {{bottom: 100}}>
                 {({isVisible}) => (
                     <div>
                         {isVisible ? <CountUp startVal = {0}

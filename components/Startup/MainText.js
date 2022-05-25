@@ -61,11 +61,11 @@ export default function MainText() {
                 </div>
 
                 <div className = {"flex flex-col gap-8"}>
-                    <p className = {"text-center font-light text-shades-10 text-2xl md:text-4xl border-b-2 border-shades-60 pb-6"}>
+                    <p className = {"text-center font-light text-shades-10 text-2xl border-b-2 border-shades-60 pb-6"}>
                         چرا خانه خلاق و نوآوری دنیای اقتصاد؟
 
                     </p>
-                    <p className = {"text-justify font-light text-shades-10 text-2xl"}>
+                    <p className = {"text-justify font-light text-shades-10 text-sm md:text-lg"}>
                         خانه خلاق و نوآوری دنیای اقتصاد با بررسی بازار هدف شما، تزریق سرمایه به‌صورت
                         برنامه‌ریزی‌شده و تعیین مدیریت پروژه، قصد دارد <span className = {"text-accent"}>ریسک استارتاپ و ایده شما را به حداقل برساند. </span> همچنین
                         باتوجه به اعتبار و بسترهای موجود در گروه رسانه‌ای دنیای اقتصاد در جهت <span

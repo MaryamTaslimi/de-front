@@ -4,9 +4,9 @@ import {Carousel} from 'react-responsive-carousel';
 export default function VerticalCarousel() {
     const items = [
         {name: 'تسهیل فرایند سرمایه‌گذاری'},
-        {name: 'تسهیل فرایند سرمایه‌پذیری'},
         {name: 'مشاوره سرمایه‌گذاری و کسب‌وکار\u00A0'},
         {name: 'شراکت استراتژیک'},
+        {name: 'تسهیل فرایند سرمایه‌پذیری'},
         {name: 'رویداد و آموزش'},
 
     ]

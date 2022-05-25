@@ -7,7 +7,7 @@ export default function PartnersCarousel() {
         {name: "پایگاه خبری دنیای بورس", src: '/home/logo-p3.png'},
         {name: "اتاق بازرگانی ایران", src: '/home/logo-p4.png'},
         {name: "خانه نوآوری و فناوری سلیم", src: '/home/logo-p5.png'},
-        {name: "روزنامه دنیای اقتصاد", src: '/home/logo-p6.png'},
+        {name: "روزنامه دنیای اقتصاد", src: '/home/logo-p6.png', className: "max-w-[165%]"},
         {name: "سایت خبری اقتصادنیوز", src: '/home/logo-p7.png'},
         {name: "هفته نامه تجارت فردا", src: '/home/logo-p8.png', className: "w-12"},
         {name: "انتشارات دنیای اقتصاد", src: '/home/logo-p9.png', className: "w-12"},

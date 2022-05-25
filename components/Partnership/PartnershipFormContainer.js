@@ -4,7 +4,7 @@ import PartnershipForm from "./PartnershipForm";
 export default function PartnershipFormContainer() {
     return (
         <div>
-            <div className = {styles.formContainer + " hidden min-h-[145vh] lg:flex items-end justify-center pb-24"}>
+            <div className = {styles.formContainer + " hidden min-h-[210vh] lg:flex items-end justify-center pb-24"}>
                 <div className = {" flex flex-row justify-between items-center gap-8"}>
                     <PartnershipForm/>
                 </div>
