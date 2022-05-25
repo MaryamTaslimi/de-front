@@ -18,7 +18,7 @@ export default function PartnershipForm() {
 
     const submitForm = () => {
 
-        if (name && phone) {
+        if (name && phone && phone.length === 11) {
             setLoading(true);
             axios.post(apiRoutes.baseURL + apiRoutes.partnerForm, {
                 "name": name,
@@ -47,7 +47,7 @@ export default function PartnershipForm() {
                     return false;
                 })
         } else {
-            alert("وارد کردن نام و شماره همراه الزامی است.")
+            alert("وارد کردن نام و شماره همراه ۱۱ رقمی الزامی است.")
         }
 
     }

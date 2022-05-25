@@ -15,7 +15,7 @@ export default function MainForm() {
     const [loading, setLoading] = useState(false);
 
     const submitForm = () => {
-        if (name && phone) {
+        if (name && phone && phone.length === 11) {
             setLoading(true);
             axios.post(apiRoutes.baseURL + apiRoutes.mainForm, {
                 "name": name,
@@ -44,7 +44,7 @@ export default function MainForm() {
                     return false;
                 })
         } else {
-            alert("وارد کردن نام و شماره همراه الزامی است.")
+            alert("وارد کردن نام و شماره همراه ۱۱ رقمی الزامی است.")
         }
 
     }

@@ -17,7 +17,7 @@ export default function InvestorForm() {
 
     const submitForm = () => {
 
-        if (name && phone) {
+        if (name && phone && phone.length === 11) {
             setLoading(true);
             axios.post(apiRoutes.baseURL + apiRoutes.investorForm, {
                 "name": name,
@@ -45,7 +45,7 @@ export default function InvestorForm() {
                     return false;
                 })
         } else {
-            alert("وارد کردن نام و شماره همراه الزامی است.")
+            alert("وارد کردن نام و شماره همراه ۱۱ رقمی الزامی است.")
         }
     }
 

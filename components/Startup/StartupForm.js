@@ -21,7 +21,7 @@ export default function StartupForm() {
 
     const submitForm = () => {
 
-        if (name && phone) {
+        if (name && phone && phone.length === 11) {
             setLoading(true);
             const formData = new FormData();
             formData.append("name", name);
@@ -48,7 +48,7 @@ export default function StartupForm() {
                     return false;
                 })
         } else {
-            alert("وارد کردن نام و شماره همراه الزامی است.")
+            alert("وارد کردن نام و شماره همراه ۱۱ رقمی الزامی است.")
         }
     }
 
