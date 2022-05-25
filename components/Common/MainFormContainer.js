@@ -14,7 +14,7 @@ const items = [
 export default function MainFormContainer() {
     return (
         <div>
-            <div className = {styles.formContainer + " hidden min-h-[120vh] lg:flex items-end justify-center 2xl:h-[150vh] py-16 2xl:pb-32"}>
+            <div className = {styles.formContainer + " hidden min-h-[120vh] xl:min-h-[160vh] lg:flex items-end justify-center  py-16 2xl:pb-32"}>
                 <div className = {" xl:w-2/3 px-20 xl:px-0 flex flex-row justify-between items-center gap-8"}>
                     <div className = {" relative flex flex-col gap-10"}>
                         <div className = {"flex flex-row items-center gap-4"}>
