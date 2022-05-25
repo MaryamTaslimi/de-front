@@ -26,7 +26,7 @@ export default function MainForm() {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                withCredentials: true
+                // withCredentials: true
             })
                 .then(response => {
                     setLoading(false);
