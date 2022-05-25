@@ -17,7 +17,6 @@ export default function Partnership() {
                     <title>شراکت استراتژیک</title>
                     <meta name = "description" content = "مرکز فناوری دنیای اقتصاد"/>
                     <link rel = "icon" href = "/common/logo.png"/>
-                    <meta httpEquiv ="Content-Security-Policy" content="upgrade-insecure-requests"/>
                 </Head>
                 <HeroInner number = {2} title = {"شراکت استراتژیک"}
                            body = {"صاحبان کسب‌وکارها"}/>

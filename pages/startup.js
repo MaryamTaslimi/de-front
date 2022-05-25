@@ -18,7 +18,6 @@ export default function Startup() {
                     <title>سرمایه‌پذیر</title>
                     <meta name = "description" content = "مرکز فناوری دنیای اقتصاد"/>
                     <link rel = "icon" href = "/common/logo.png"/>
-                    <meta httpEquiv ="Content-Security-Policy" content="upgrade-insecure-requests"/>
                 </Head>
                 <HeroInner number = {3} title = {"سرمایه‌پذیر"}
                            body = {"شرکت‌های دانش‌بنیان، ایده‌پردازان و گروه‌های استارتاپی"}/>
