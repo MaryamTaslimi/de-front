@@ -23,6 +23,7 @@ export default function Home() {
                     <title>خانه</title>
                     <meta name = "description" content = "مرکز فناوری دنیای اقتصاد"/>
                     <link rel = "icon" href = "/common/logo.png"/>
+                    <meta httpEquiv ="Content-Security-Policy" content="upgrade-insecure-requests"/>
                 </Head>
                 <Hero/>
 
