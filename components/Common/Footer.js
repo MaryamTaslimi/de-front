@@ -13,7 +13,7 @@ const disableNavigation = [
 ]
 
 const socialMedia = [
-    {name: 'اینستاگرام', href: '#', src: '/common/instagram.png'},
+    {name: 'اینستاگرام', href: 'https://instagram.com/deic.vc?igshid=YmMyMTA2M2Y=', src: '/common/instagram.png'},
     {name: 'لینکدین', href: 'https://www.linkedin.com/in/deic', src: '/common/linkedIn.png'},
 ]
 
