@@ -30,7 +30,6 @@ export default function PartnershipForm() {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                // withCredentials: true
             })
                 .then(response => {
                     setLoading(false);

@@ -28,7 +28,6 @@ export default function InvestorForm() {
                 headers: {
                     "Content-Type": "application/json",
                 },
-                // withCredentials: true
             })
                 .then(response => {
                     setLoading(false);
