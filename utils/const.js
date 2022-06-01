@@ -7,6 +7,7 @@ const port = 5005
 export const apiRoutes = {
     // baseURL: `http://185.110.189.42:${port}/`,
     baseURL: `https://api.deic.vc/`,
+    // baseURL: `http://localhost:5005/`,
     mainForm: "main-form",
     investorForm: "investor-form",
     partnerForm: "partnership-form",

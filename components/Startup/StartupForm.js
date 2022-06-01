@@ -4,6 +4,7 @@ import ContactPhoneSharpIcon from '@mui/icons-material/ContactPhoneSharp';
 import VerifiedSharpIcon from '@mui/icons-material/VerifiedSharp';
 import FileUploadSharpIcon from '@mui/icons-material/FileUploadSharp';
 import AssignmentSharpIcon from '@mui/icons-material/AssignmentSharp';
+import AddIcon from '@mui/icons-material/Add';
 
 import {apiRoutes} from "../../utils/const";
 import axios from "axios";
@@ -14,13 +15,13 @@ export default function StartupForm() {
     const [name, setName] = useState("");
     const [startup, setStartup] = useState("");
     const [workArea, setWorkArea] = useState("");
-    const [selectedFile, setSelectedFile] = useState(null);
+    const [selectedFiles, setSelectedFiles] = useState([]);
     const [phone, setPhone] = useState("");
     const [loading, setLoading] = useState(false);
-
+    const [filesCount, setFilesCount] = useState(1);
+    const formUploads = []
 
     const submitForm = () => {
-
         if (name && phone && phone.length === 11) {
             setLoading(true);
             const formData = new FormData();
@@ -28,7 +29,10 @@ export default function StartupForm() {
             formData.append("startup", startup);
             formData.append("workArea", workArea);
             formData.append("phone", phone);
-            formData.append("doc", selectedFile);
+            selectedFiles.map(file => {
+                formData.append("docs", file)
+            })
+            // formData.append("doc", selectedFile);
             axios.post(apiRoutes.baseURL + apiRoutes.startupForm, formData, {
                 "Content-Type": "multipart/form-data"
             })
@@ -50,6 +54,27 @@ export default function StartupForm() {
         } else {
             alert("وارد کردن نام و شماره همراه ۱۱ رقمی الزامی است.")
         }
+    }
+
+    for (let i = 0; i < filesCount; i++) {
+        formUploads.push(
+            <div className = "flex flex-row justify-between items-center gap-4" key={i}>
+                <label
+                    htmlFor = "docs"
+                    className = "cursor-pointer font-light text-base text-shades-100 px-2 py-1 rounded-sm bg-shades-40 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-accent-50"
+                >
+                    <span>انتخاب فایل</span>
+                    <input id = "docs" name = "docs" type = "file"
+                           className = "sr-only"
+                           onChange = {(e) => {
+                               setSelectedFiles((prevFiles) => [...prevFiles, e.target.files[0]]);
+                           }
+                           }
+                    />
+                </label>
+                <p className = "text-xs text-shades-80">{selectedFiles[i] ? selectedFiles[i].name : "فایلی انتخاب نشده"}</p>
+            </div>
+        )
     }
 
     return (
@@ -116,26 +141,16 @@ export default function StartupForm() {
                         </div>
 
                         <div className = "mt-1 flex flex-col gap-4 justify-center items-center py-6 bg-shades-20">
+                            <AssignmentSharpIcon className = {"text-form-grey text-md"} sx = {{fontSize: 50}}/>
+                            {formUploads}
+                        </div>
 
-                            <AssignmentSharpIcon className = {"text-form-grey text-md"}
-                                                 sx = {{fontSize: 50}}/>
-                            <div className = "flex flex-row justify-between items-center gap-4">
-                                <label
-                                    htmlFor = "doc"
-                                    className = "cursor-pointer font-light text-base text-shades-100 px-2 py-1 rounded-sm bg-shades-40 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-accent-50"
-                                >
-                                    <span>انتخاب فایل</span>
-                                    <input id = "doc" name = "doc" type = "file"
-                                           className = "sr-only"
-                                           onChange = {(e) => {
-                                               setSelectedFile(e.target.files[0]);
-                                           }
-                                           }
-                                    />
-                                </label>
-                                <p className = "text-xs text-shades-80">{selectedFile ? selectedFile.name : "فایلی انتخاب نشده"}</p>
+                        <div className = {"flex flex-row p-2 cursor-pointer"} onClick = {() => {
+                            setFilesCount(filesCount + 1)
+                        }}>
+                            <AddIcon className = {"text-form-grey text-md"}/>
+                            <p className = {"text-shades-80 text-base font-light"}>بارگذاری فایل‌های بیشتر</p>
 
-                            </div>
                         </div>
                     </div>
 
@@ -184,5 +199,6 @@ export default function StartupForm() {
         </div>
     )
 }
+
 
 
