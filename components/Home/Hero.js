@@ -17,7 +17,6 @@ export default function Hero() {
                 <div>
                     <a href = {"#InfoBox"}>
                         <Chevron/>
-                        <Chevron/>
                     </a>
                 </div>
             </div>

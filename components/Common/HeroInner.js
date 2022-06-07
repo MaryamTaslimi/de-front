@@ -35,7 +35,6 @@ export default function HeroInner({number, title, body}) {
             </div>
             <div className={"hidden lg:block"}>
                 <Chevron/>
-                <Chevron/>
             </div>
         </div>
     )

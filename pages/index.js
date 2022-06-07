@@ -14,6 +14,7 @@ import Header from "../components/Common/Header";
 import MainFormSection from "../components/Home/MainFormSection";
 import MobileHero from "../components/Home/MobileHero";
 import ServicesExpandMobile from "../components/Home/ServicesExpandMobile";
+import Simple from "../components/Home/Simple";
 
 export default function Home() {
     return (
@@ -46,6 +47,7 @@ export default function Home() {
                     <Partners/>
                     <FAQ/>
                 </main>
+                <Simple />
                 <Footer/>
 
             </div>

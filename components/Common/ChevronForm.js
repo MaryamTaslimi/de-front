@@ -6,7 +6,6 @@ export default function ChevronForm() {
             <a href = {"#form"}>
                 <p className = {"text-shades-10 font-light text-sm md:text-lg mb-4"}>فرم همکاری</p>
                 <Chevron/>
-                <Chevron/>
             </a>
         </div>
     )
