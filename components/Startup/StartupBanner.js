@@ -5,7 +5,7 @@ export default function StartupBanner() {
     return (
         <div
             className = {"flex flex-col xl:flex-row items-center xl:items-start justify-between mt-24 font-light bg-[#DCD7D5] gap-12 py-12 px-6 sm:px-20"}>
-            <img src = {"/startup/startupBanner.png"} className = {"max-w-xl h-auto"}/>
+            <img src = {"/startup/startupBanner.png"} className = {"md:max-w-xl h-auto"}/>
             <div className = {"flex flex-col justify-center grow gap-12"}>
                 <p className = {"text-[#E6491E] text-2xl lg:text-4xl text-center"}>خانه خلاق و نوآوری دنیای اقتصاد برگزار
                     می‌کند؛<br/>
@@ -34,7 +34,13 @@ export default function StartupBanner() {
                 </p>
                     <a
                         href = "#form"
-                        className = "flex flex-row items-center justify-center gap-2 bg-[#E6491E] w-full h-14 border border-transparent rounded-sm text-2xl font-light text-shades-10">
+                        className = "hidden lg:flex flex-row items-center justify-center gap-2 bg-[#E6491E] w-full h-14 border border-transparent rounded-sm text-2xl font-light text-shades-10">
+                        <p className={"text-base lg:text-2xl"}>تکمیل فرم</p>
+                        <KeyboardArrowLeftRoundedIcon/>
+                    </a>
+                <a
+                        href = "#formMobile"
+                        className = "lg:hidden flex flex-row items-center justify-center gap-2 bg-[#E6491E] w-full h-14 border border-transparent rounded-sm text-2xl font-light text-shades-10">
                         <p className={"text-base lg:text-2xl"}>تکمیل فرم</p>
                         <KeyboardArrowLeftRoundedIcon/>
                     </a>
