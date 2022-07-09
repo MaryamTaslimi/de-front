@@ -12,7 +12,7 @@ export default function HeroText() {
                     <p className = {styles.new + " opacity-0 text-accent font-light text-5xl -mt-12"}>از اینجا شروع شد</p>
                 </div>
             </div>
-            <div className={"absolute right-[47.19%] top-32"}>
+            <div className={"absolute right-[47.19%] top-64"}>
                 <Image src = "/home/lamp-on.png" className = {styles.img + " opacity-25 duration-700 ease-out"}
                        width = {100}
                        height = {100} alt = "hover"/>

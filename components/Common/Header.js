@@ -3,9 +3,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import {Transition} from '@headlessui/react'
 import {useState} from "react";
+import BannerHeader from "./BannerHeader";
 
 const navigation = [
-    {name: 'سرمایه‌گذاران', href: 'investor'},
+    {name: 'سرمایه‌گذاران', href: '/investor'},
     {name: 'شراکت استراتژیک', href: '/partnership'},
     {name: 'سرمایه‌پذیر', href: '/startup'},
     {name: 'درباره ما', href: '/about-us'},

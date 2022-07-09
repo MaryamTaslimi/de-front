@@ -9,6 +9,7 @@ import ChevronForm from "../components/Common/ChevronForm";
 import StartupFormContainer from "../components/Startup/StartupFormContainer";
 import Path from "../components/Startup/Path";
 import MainTextMobile from "../components/Startup/MainTextMobile";
+import StartupBanner from "../components/Startup/StartupBanner";
 
 export default function Startup() {
     return (
@@ -22,10 +23,12 @@ export default function Startup() {
                 <HeroInner number = {3} title = {"سرمایه‌پذیر"}
                            body = {"شرکت‌های دانش‌بنیان، ایده‌پردازان و گروه‌های استارتاپی"}/>
                 <main className = {styles.main}>
+                    <StartupBanner/>
+
                     <div className = {"py-12 px-6 sm:px-20"}>
                         <div className={"hidden lg:block"}>
-                            <Gap/>
                         </div>
+                        <Gap/>
                         <MainText/>
                         <MainTextMobile/>
                         <Gap/>
