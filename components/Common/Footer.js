@@ -45,8 +45,8 @@ export default function Footer() {
                         <a
                             dir = {"ltr"}
                             className = {"text-base font-light text-primary"}
-                            href = {"https://wa.me/093861575703"}
-                        >۰۹۳۸ ۶۱ ۵۷ ۵۷ ۰۳</a>
+                            href = {"https://wa.me/09386157570"}
+                        >۰۹۳۸ ۶۱۵ ۷۵۷۰</a>
                     </div>
                     <div className = {"flex flex-row items-center"}>
                         <AlternateEmailSharpIcon className = {"text-primary ml-4"}/>

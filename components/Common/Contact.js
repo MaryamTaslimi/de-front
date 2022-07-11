@@ -32,8 +32,8 @@ export default function Contact() {
                     <a
                         dir = {"ltr"}
                         className = {"text-base font-light text-white"}
-                        href = {"https://wa.me/093861575703"}
-                    >۰۹۳۸ ۶۱ ۵۷ ۵۷ ۰۳</a>
+                        href = {"https://wa.me/09386157570"}
+                    >۰۹۳۸ ۶۱۵ ۷۵۷۰</a>
                 </div>
                 <div className = {"flex flex-row items-center"}>
                     <AlternateEmailSharpIcon className = {"text-white ml-4"}/>
