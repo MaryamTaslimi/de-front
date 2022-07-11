@@ -12,8 +12,10 @@ export default function MainTextMobile() {
             <div className = {"lg:hidden flex flex-col justify-between items-stretch gap-10"}>
 
                 <div className = {"flex flex-col gap-4"}>
-                    <p className = {"text-right font-light text-shades-10 text-lg border-b-2 border-shades-60 pb-2"}>شراکت
+                    <p className = {"text-right font-light text-shades-10 text-lg border-b-2 border-shades-60 pb-2"}>
+                        شراکت
                         استراتژیک
+                        چیست؟
                     </p>
                     <p className = {"text-justify font-light text-shades-10 text-sm"}>
                         مشارکت در مرکز نوآوری دنیای اقتصاد

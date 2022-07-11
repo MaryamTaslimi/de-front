@@ -13,7 +13,7 @@ export default function MainTextMobile() {
 
                 <div className = {"flex flex-col gap-4"}>
                     <p className = {"text-right font-light text-shades-10 text-lg md:text-2xl border-b-2 border-shades-60 pb-2"}>
-                        سرمایه‌پذیر
+                        چالش‌های جذب سرمایه
                     </p>
                     <p className = {"text-justify font-light text-shades-10 text-sm md:text-lg"}>
                         جابون نام یک استارتاپ با محوریت فناوری‌های پوشیدنی بود که لوازم جانبی مختلفی از جمله هندزفری

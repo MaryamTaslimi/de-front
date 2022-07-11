@@ -24,8 +24,9 @@ export default function Mission() {
 
                 <p className = {"text-justify font-light text-shades-20 text-sm md:text-lg"}>
                     باتوجه‌به پیشرفت علم و افزایش رقابت میان کسب‌وکارها، ما باور داریم که برای ماندگاری و به‌دست‌آوردن
-                    سهم
-                    بازار، راهی به جز <span className = {"text-accent"}>نوآوری و استفاده از فناوری </span>موجود نیست.
+                    سهم بازار، راهی به جز ورود به
+                    <span className = {"text-accent"}> عرصه نوآوری و استفاده از فناوری‌های روز </span>
+                    وجود ندارد.
                 </p>
 
                 <div className = {"flex flex-col lg:flex-row justify-start gap-24 lg:gap-52"}>

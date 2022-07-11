@@ -6,6 +6,7 @@ import {useState} from "react";
 import BannerHeader from "./BannerHeader";
 
 const navigation = [
+    {name: 'بلاگ', href: 'https://blog.deic.vc/'},
     {name: 'سرمایه‌گذاران', href: '/investor'},
     {name: 'شراکت استراتژیک', href: '/partnership'},
     {name: 'سرمایه‌پذیر', href: '/startup'},
@@ -34,7 +35,7 @@ export default function Header({transparent}) {
                         {navigation.map((link) => (
                             <Link key = {link.name} href = {link.href}>
                                 <a
-                                    className = {"text-base font-light" + (transparent ? " text-white" : " text-primary")}>
+                                    className = {"text-lg font-light" + (transparent ? " text-white" : " text-primary")}>
                                     {link.name}
                                 </a>
                             </Link>

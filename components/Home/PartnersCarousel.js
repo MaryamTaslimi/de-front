@@ -14,6 +14,12 @@ export default function PartnersCarousel() {
         {name: "سایت خبری اقتصادنیوز", src: '/home/logo-p7.png', className: "w-20 md:w-24"},
         {name: "هفته نامه تجارت فردا", src: '/home/logo-p8.png', className: "w-12"},
         {name: "انتشارات دنیای اقتصاد", src: '/home/logo-p9.png', className: "w-12"},
+        {name: "مرکز نوآوری جهش", src: '/home/logo-p10.png', className: "w-40 md:w-48"},
+        {name: "تکنوتجارت", src: '/home/logo-p11.png', className: "w-40 md:w-48"},
+        {name: "شرکت سرمایه‌گذاری خطرپذیر آفرینش", src: '/home/logo-p12.png', className: "w-20 md:w-24"},
+        {name: "مدیریت ثروت ستارگان", src: '/home/logo-p13.png', className: "w-20 md:w-24"},
+        {name: "شرکت سرمایه‌گذاری خطرپذیر شناسا", src: '/home/logo-p14.png', className: "w-16 md:w-24"},
+        {name: "معاونت علمی و فناوری ریاست جمهوری", src: '/home/logo-p15.png', className: "w-20 md:w-24"},
     ]
 
     const responsive = {
