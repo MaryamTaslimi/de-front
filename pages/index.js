@@ -24,7 +24,6 @@ export default function Home() {
                     <meta name = "description" content = "مرکز فناوری دنیای اقتصاد"/>
                     <link rel = "icon" href = "/common/logo.png"/>
                 </Head>
-                <BannerHeader/>
 
                 <Hero/>
 

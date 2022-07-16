@@ -9,7 +9,7 @@ export default function Bottom() {
         <div className = {"xl:w-2/3"}>
             <Team/>
             <Gap/>
-            <Contact/>
+            {/*<Contact/>*/}
             <div  className={"md:hidden"}>
                 <ChevronForm/>
             </div>

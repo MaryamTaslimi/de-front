@@ -5,7 +5,7 @@ const team = [
     {name: "غلام‌حسین محمدی", position: "رئیس مرکز", image: "/about/qolam.png", linkedIn: ""},
     {
         name: "رسول قنبری",
-        position: "مدیر اجرایی",
+        position: "مدیر سرمایه‌گذاری",
         image: "/about/rasul.png",
         linkedIn: "https://www.linkedin.com/in/rasoul-qanbari/"
     },

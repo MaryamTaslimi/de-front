@@ -11,7 +11,7 @@ export default function HeroText() {
                         می‌شود...</p>
                 </div>
             </div>
-            <div className={"absolute right-[47.19%] top-64"}>
+            <div className={"absolute right-[47.19%] top-[43%]"}>
                 <Image src = "/home/lamp-on.png" className = {styles.img + " opacity-25 duration-700 ease-out"}
                        width = {100}
                        height = {100} alt = "hover"/>

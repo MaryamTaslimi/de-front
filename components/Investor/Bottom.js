@@ -9,7 +9,7 @@ export default function Bottom() {
         <div className = {"xl:w-2/3"}>
             <Call/>
             <Gap/>
-            <Team/>
+            {/*<Team/>*/}
         </div>
     </div>
     )

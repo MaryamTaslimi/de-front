@@ -5,7 +5,7 @@ import HexagonRoundedIcon from "@mui/icons-material/HexagonRounded";
 
 const items = [
     {title: "تکمیل فرم", src: "/common/h1.png"},
-    {title: "تماس و بررسی نوع عمکاری"
+    {title: "تماس و بررسی نوع همکاری"
     , src: "/common/h2.png"},
     {title: "شروع همکاری", src: "/common/h3.png"},
 ]

@@ -20,9 +20,9 @@ const disableNavigation = [
 const socialMedia = [
     {name: 'اینستاگرام', href: 'https://instagram.com/deic.vc?igshid=YmMyMTA2M2Y=', src: '/common/instagram.png'},
     {name: 'لینکدین', href: 'https://www.linkedin.com/in/deic', src: '/common/linkedIn.png'},
-    {name: 'تلگرام', href: 'https://www.linkedin.com/in/deic', src: '/common/telegram.png'},
-    {name: 'واتساپ', href: 'https://www.linkedin.com/in/deic', src: '/common/whatsapp.png'},
-    {name: 'آپارات', href: 'https://www.linkedin.com/in/deic', src: '/common/aparat.png'},
+    {name: 'تلگرام', href: 'https://t.me/deicvc', src: '/common/telegram.png'},
+    {name: 'واتساپ', href: 'https://wa.me/09386157570', src: '/common/whatsapp.png'},
+    {name: 'آپارات', href: 'https://www.aparat.com/deic.vc', src: '/common/aparat.png'},
 ]
 
 export default function Footer() {

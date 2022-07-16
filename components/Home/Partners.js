@@ -11,7 +11,7 @@ export default function Partners() {
                     <p className = {"font-light text-white text-2xl mt-16 mb-8"}>همکاران ما</p>
                     <PartnersCarousel/>
                 </div>
-                <Contact/>
+                {/*<Contact/>*/}
             </div>
         </div>
     )
