@@ -33,9 +33,9 @@ export default function Mission() {
                     <MissionStack
                         title = {1} bodyItems = {stack1}/>
 
-                    <MissionStack
-                        title = {2}
-                        bodyItems = {stack2}/>
+                    {/*<MissionStack*/}
+                    {/*    title = {2}*/}
+                    {/*    bodyItems = {stack2}/>*/}
                 </div>
 
                 <p className = {"text-justify font-light text-shades-20 text-sm md:text-lg"}>

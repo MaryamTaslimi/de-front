@@ -3,6 +3,7 @@ import Header from "./Header";
 import Chevron from "./Chevron";
 
 import {useRef} from "react";
+import BannerHeader from "./BannerHeader";
 
 export default function HeroInner({number, title, body}) {
     const colorClass = useRef(styles.heroContainer);
@@ -20,6 +21,7 @@ export default function HeroInner({number, title, body}) {
 
     return (
         <div className = {"flex flex-col"}>
+            <BannerHeader/>
             <div className={"lg:hidden"}>
                 <Header transparent = {true}/>
             </div>

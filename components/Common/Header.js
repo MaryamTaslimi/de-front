@@ -16,8 +16,6 @@ const navigation = [
 export default function Header({transparent}) {
     const [hamburger, setHamburger] = useState(false);
     return (
-        <div>
-            <BannerHeader/>
             <header className = {"py-4 md:py-12 lg:py-4 px-4 md:px-20" + (transparent ? "" : "bg-white")}>
                 <nav className = "hidden lg:block" aria-label = "Top">
                     <div
@@ -118,6 +116,5 @@ export default function Header({transparent}) {
                 </div>
 
             </header>
-        </div>
     )
 }

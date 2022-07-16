@@ -2,11 +2,12 @@ import Header from "../Common/Header";
 import HeroText from "./HeroText";
 import styles from "/styles/Home.module.css"
 import Chevron from "../Common/Chevron";
-import Image from "next/image"
+import BannerHeader from "../Common/BannerHeader";
 
 export default function Hero() {
     return (
         <div>
+            <BannerHeader/>
             <div className = {"hidden lg:flex flex-col"}>
                 <div className = {styles.heroContainer + " flex flex-col"}>
                     <Header transparent = {true}/>
