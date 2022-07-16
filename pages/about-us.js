@@ -11,6 +11,7 @@ import ImagesSection from "../components/AboutUs/ImagesSection";
 import Bottom from "../components/AboutUs/Bottom";
 import WhiteGap from "../components/Common/WhiteGap";
 import MainFormContainer from "../components/Common/MainFormContainer";
+import BannerHeader from "../components/Common/BannerHeader";
 
 
 export default function AboutUs() {
@@ -22,9 +23,11 @@ export default function AboutUs() {
                     <meta name = "description" content = "مرکز فناوری دنیای اقتصاد"/>
                     <link rel = "icon" href = "/common/logo.png"/>
                 </Head>
+                <BannerHeader/>
                     <Header transparent = {true}/>
                 <main className = {styles.main}>
                     <div className = {"py-4 md:py-12 px-4 md:px-20"}>
+
                         <AboutHero/>
                         <Gap/>
                         <Mission/>
