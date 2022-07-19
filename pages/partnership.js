@@ -19,7 +19,9 @@ export default function Partnership() {
                     <link rel = "icon" href = "/common/logo.png"/>
                 </Head>
                 <HeroInner number = {2} title = {"شراکت استراتژیک"}
-                           body = {"صاحبان کسب‌وکارها"}/>
+                           body = {"صاحبان کسب‌وکارها"}
+                           url = {"https://www.aparat.com/embed/39fDw?data[rnddiv]=21585345723&data[responsive]=yes"}
+                />
                 <main className = {styles.main}>
                     <div className = {"py-12 px-6 sm:px-20"}>
                         <div className = {"hidden lg:block"}>

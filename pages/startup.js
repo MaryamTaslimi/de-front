@@ -21,12 +21,14 @@ export default function Startup() {
                     <link rel = "icon" href = "/common/logo.png"/>
                 </Head>
                 <HeroInner number = {3} title = {"سرمایه‌پذیر"}
-                           body = {"شرکت‌های دانش‌بنیان، ایده‌پردازان و گروه‌های استارتاپی"}/>
+                           body = {"شرکت‌های دانش‌بنیان، ایده‌پردازان و گروه‌های استارتاپی"}
+                           url = {"https://www.aparat.com/embed/NeJUh?data[rnddiv]=83275587402&data[responsive]=yes"}
+                />
                 <main className = {styles.main}>
                     <StartupBanner/>
 
                     <div className = {"py-12 px-6 sm:px-20"}>
-                        <div className={"hidden lg:block"}>
+                        <div className = {"hidden lg:block"}>
                         </div>
                         <Gap/>
                         <MainText/>

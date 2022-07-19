@@ -21,7 +21,10 @@ export default function Investor() {
                     <link rel = "icon" href = "/common/logo.png"/>
                 </Head>
                 <HeroInner number = {1} title = {"سرمایه‌گذاران"}
-                           body = {"سرمایه‌گذاران حقیقی و حقوقی،شتاب‌دهنده‌ها وسرمایه‌گذاران خطرپذیر"}/>
+                           body = {"سرمایه‌گذاران حقیقی و حقوقی،شتاب‌دهنده‌ها وسرمایه‌گذاران خطرپذیر"}
+                           url = {"https://www.aparat.com/embed/VSvId?data[rnddiv]=91660280326&data[responsive]=yes"}
+
+                />
 
                 <main className = {styles.main}>
                     <div className = {"py-6 px-4 md:px-20 md:py-12"}>
