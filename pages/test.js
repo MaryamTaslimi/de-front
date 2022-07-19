@@ -1,4 +1,3 @@
-import ReactPlayer from 'react-player/lazy'
 import Script from "next/script";
 import {useEffect} from "react";
 

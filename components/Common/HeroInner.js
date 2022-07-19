@@ -6,7 +6,6 @@ import {useRef} from "react";
 import BannerHeader from "./BannerHeader";
 import {Dialog, Transition} from '@headlessui/react'
 import {Fragment, useState} from 'react'
-import ReactPlayer from "react-player/lazy";
 import Script from "next/script";
 
 export default function HeroInner({number, title, body, url}) {
