@@ -47,7 +47,7 @@ export default function HeroInner({number, title, body, url}) {
                 <div className = "flex flex-col gap-16 py-6 md:py-12 px-4 md:px-20">
                     <p className = {"hidden md:block font-light text-4xl lg:text-6xl text-shades-10"}>{title}</p>
                     <p className = {"font-light text-lg lg:text-2xl text-shades-10 text-center md:text-right"}>{body}</p>
-                    <div className = {"flex flex-row items-center gap-3 md:gap-6 justify-center md:justify-start"} onClick = {openModal}>
+                    <div className = {"flex flex-row items-center gap-3 md:gap-6 justify-center md:justify-start cursor-pointer"} onClick = {openModal}>
                         <p className = {"font-light text-lg lg:text-2xl text-accent text-center md:text-right"}>راجع
                             به همکاری با ما بیشتر بدانید</p>
                         <img src = {"/common/play-video.png"} alt = {""} className = {"w-12 md:w-20 h-auto"}/>
