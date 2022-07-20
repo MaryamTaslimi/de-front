@@ -35,7 +35,7 @@ export default function Investor() {
                         <MainTextMobile/>
                         <Gap/>
                         <Bottom/>
-                        <Gap/>
+                        {/*<Gap/>*/}
                         <Path/>
                         <ChevronForm/>
                     </div>

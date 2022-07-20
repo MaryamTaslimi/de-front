@@ -76,7 +76,6 @@ export default function MainText() {
                     </p>
                 </div>
             </div>
-
         </div>
     )
 }

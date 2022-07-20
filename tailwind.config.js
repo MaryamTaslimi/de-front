@@ -17,7 +17,8 @@ module.exports = {
             'white': '#FFFFFF',
             'form-grey': '#AFAFAF',
             'shades-100': '#060606',
-            'shades-80': '#616161'
+            'shades-80': '#616161',
+            'banner-primary': '#E7481E'
 
         },
         extend: {},
