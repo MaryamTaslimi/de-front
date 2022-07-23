@@ -8,7 +8,7 @@ export default function MainFormSection() {
         <div>
             <MainFormContainer/>
             <div className={"hidden lg:block"}>
-            <img src = {"/home/handShake.png"} className = {"w-full -mt-12"}/>
+            <img src = {"/home/people.png"} className = {"w-full -mt-12"}/>
             <div className = {styles.formContainerDown + " flex items-end justify-center"}/>
             </div>
         </div>

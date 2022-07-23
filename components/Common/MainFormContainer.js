@@ -1,12 +1,10 @@
 import styles from "/styles/Home.module.css"
 import MainForm from "../Home/MainForm";
-import Stack from "./Stack";
-import HexagonRoundedIcon from "@mui/icons-material/HexagonRounded";
+
 
 const items = [
     {title: "تکمیل فرم", src: "/common/h1.png"},
-    {title: "تماس و بررسی نوع همکاری"
-    , src: "/common/h2.png"},
+    {title: "تماس و بررسی نوع همکاری", src: "/common/h2.png"},
     {title: "شروع همکاری", src: "/common/h3.png"},
 ]
 
@@ -14,7 +12,8 @@ const items = [
 export default function MainFormContainer() {
     return (
         <div>
-            <div className = {styles.formContainer + " hidden min-h-[180vh] lg:flex items-end justify-center py-16 2xl:pb-32"}>
+            <div
+                className = {styles.formContainer + " hidden min-h-[180vh] lg:flex items-end justify-center py-16 2xl:pb-32"}>
                 <div className = {" xl:w-2/3 px-20 xl:px-0 flex flex-row justify-between items-center gap-8"}>
                     <div className = {" relative flex flex-col gap-10"}>
                         <div className = {"flex flex-row items-center gap-4"}>
@@ -28,7 +27,7 @@ export default function MainFormContainer() {
                             {
                                 items.map((item) => {
                                         return (
-                                            <div key = {item}
+                                            <div key = {item.title}
                                                  className = {"flex flex-row items-center gap-4"}>
                                                 <img src = {item.src} className = {" w-12 z-10"}/>
                                                 <p className = {"font-light text-sm md:text-lg text-primary"}>
@@ -49,8 +48,9 @@ export default function MainFormContainer() {
             </div>
 
 
-            <div className={"lg:hidden"}>
-                <div className = {styles.formContainerMobile + " flex items-end justify-center px-4" } id={"formMobile"}>
+            <div className = {"lg:hidden"}>
+                <div className = {styles.formContainerMobile + " flex items-end justify-center px-4"}
+                     id = {"formMobile"}>
                     <div className = {"flex flex-col gap-8 pb-10"}>
                         <div className = {"flex flex-row items-center gap-4"}>
                             <img src = "/common/h0.png" className = {"w-12 z-10"}/>

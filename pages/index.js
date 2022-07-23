@@ -13,7 +13,6 @@ import Header from "../components/Common/Header";
 import MainFormSection from "../components/Home/MainFormSection";
 import MobileHero from "../components/Home/MobileHero";
 import ServicesExpandMobile from "../components/Home/ServicesExpandMobile";
-import BannerHeader from "../components/Common/BannerHeader";
 
 export default function Home() {
     return (

@@ -1,6 +1,3 @@
-import Header from "../Common/Header";
-
-
 export default function MobileHero() {
     return (
         <div className = {"lg:hidden"}>
