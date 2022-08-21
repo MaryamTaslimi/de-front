@@ -21,6 +21,18 @@ const team = [
         image: "/about/hafez.png",
         linkedIn: "https://www.linkedin.com/in/mohammad-hafez-hakami-a4a4461a2/"
     },
+    {
+        name: "محسن جعفری مقدم",
+        position: "مدیر اجرایی",
+        image: "/about/mohsen.png",
+        linkedIn: "https://www.linkedin.com/in/mohsen-jaafari-moghadam-579a31244/"
+    },
+    {
+        name: "مریم آذرباد",
+        position: "گرافیست",
+        image: "/about/mary.png",
+        linkedIn: "https://www.linkedin.com/in/maryam-azarbad-4948a5248/"
+    },
 ]
 
 export default function Team() {
@@ -31,12 +43,12 @@ export default function Team() {
                 <p className = {"text-justify font-light text-shades-10 text-2xl mr-8"}>تیم ما</p>
             </div>
             <div
-                className = {"grid grid-rows-2 grid-cols-2 place-content-center gap-y-12 md:flex md:flex-row md:items-center md:justify-evenly md:gap-12"}>
+                className = {"grid grid-rows-2 grid-cols-2 place-content-center gap-y-12 md:flex md:flex-row md:justify-evenly md:gap-12"}>
                 {
-                    team.map((member, index) => (
+                    team.map((member) => (
                         <div key = {member.name}
-                             className = {"flex flex-col gap-6 justify-between items-center" + (index === 3 ? " md:-mr-6" : "")}>
-                            <Image width = {100} height = {100} src = {member.image} alt = {member.name}/>
+                             className = {"flex flex-col gap-6 justify-between items-center"}>
+                            <img className={"max-w-[6rem] "} src = {member.image} alt = {member.name}/>
                             <p className = {"font-light text-shades-40 text-base"}>{member.position}</p>
                             <p className = {"font-light text-shades-10 text-base"}>{member.name}</p>
                             <a href = {member.linkedIn}

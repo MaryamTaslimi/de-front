@@ -49,7 +49,7 @@ export default function Contact() {
                 <div className = {"flex flex-row items-center"}>
                     <LocationOnSharpIcon className = {"text-white ml-4"}/>
                     <p className = {"text-base font-light text-white"}>تهران، خیابان مطهری، حد فاصل قائم‌مقام و میرزای
-                        شیرازی، پلاک ۲۹، ساختمان دنیای اقتصاد، طبقه پنجم</p>
+                        شیرازی، پلاک ۳۷۰، ساختمان دنیای اقتصاد، طبقه پنجم</p>
                 </div>
                 <div
                     className = {"hidden md:flex flex-row justify-evenly items-center gap-6"}>

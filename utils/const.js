@@ -12,5 +12,6 @@ export const apiRoutes = {
     investorForm: "investor-form",
     partnerForm: "partnership-form",
     startupForm: "startup-form",
+    downloadCatalog : "blank.pdf"
 }
 

@@ -63,7 +63,7 @@ export default function Footer() {
                         <LocationOnSharpIcon className = {"text-primary ml-4"}/>
                         <p className = {"text-base font-light text-primary"}>تهران، خیابان مطهری، حد فاصل قائم‌مقام و
                             میرزای
-                            شیرازی، پلاک ۲۹، ساختمان دنیای اقتصاد، طبقه پنجم</p>
+                            شیرازی، پلاک ۳۷۰، ساختمان دنیای اقتصاد، طبقه پنجم</p>
                     </div>
                 </div>
                 <div>

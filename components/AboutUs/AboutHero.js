@@ -1,14 +1,35 @@
+import {apiRoutes} from "../../utils/const"
+
 export default function AboutHero() {
     return (
 
-        <div className = {"flex flex-row justify-center items-center row-span-3 gap-20 mt-12 sm:mt-24"}>
-            <img src = {"/common/logo-type.png"} alt = {"logo"} className = "hidden sm:block max-h-40 w-auto"/>
+        <div className = {"flex flex-row justify-center items-center gap-20 mt-12 sm:mt-24"}>
+            <div className = {"hidden lg:flex flex-col basis-full gap-8 items-center"}>
+                <img src = {"/common/logo-type.png"} alt = {"logo"} className = " w-56 h-auto"/>
+                <a href = {apiRoutes.baseURL + apiRoutes.downloadCatalog} download target = {"_blank"}
+                   rel = "noreferrer"
+                   className = {"flex flex-row items-center"}>
+                    <p className = {"text-accent font-light text-2xl"}>دانلود کاتالوگ خانه خلاق و نوآوری دنیای
+                        اقتصاد</p>
+                    <img src = {"/about/catalog-download.png"} className = {"w-16 mr-4"}/>
+                </a>
+
+            </div>
+
             <div className = {"flex flex-col"}>
                 <div
-                    className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6 mb-8"}>
+                    className = {"flex flex-row items-center justify-start gap-8 border-b-2 border-shades-60 pb-6 md:mb-8 "}>
                     <img src = {"/about/lamp.png"} className = {"brightness-0 invert w-16 mr-4"}/>
                     <p className = {"text-justify font-light text-shades-10 text-2xl md:text-4xl"}>درباره ما</p>
+
                 </div>
+                <a href = {apiRoutes.baseURL + apiRoutes.downloadCatalog} download target = {"_blank"}
+                   rel = "noreferrer"
+                   className = {"flex flex-row items-center justify-center my-6 lg:hidden"}
+                >
+                    <p className = {"text-accent font-light text-lg "}>دانلود کاتالوگ</p>
+                    <img src = {"/about/catalog-download.png"} className = {"w-16 mr-4"}/>
+                </a>
                 <p className = {"text-justify font-light text-shades-20 text-sm md:text-lg"}>
                     خانه خلاق و نوآوری دنیای اقتصاد از سال ۱۴۰۰ فعالیت خود را در<span
                     className = {"text-accent"}> حوزه سرمایه‌گذاری خطرپذیر (Venture capital)  </span> آغاز
