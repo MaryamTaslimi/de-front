@@ -49,8 +49,8 @@ export default function Team() {
                         <div key = {member.name}
                              className = {"flex flex-col gap-6 justify-between items-center"}>
                             <img className={"max-w-[6rem] "} src = {member.image} alt = {member.name}/>
-                            <p className = {"font-light text-shades-40 text-base"}>{member.position}</p>
-                            <p className = {"font-light text-shades-10 text-base"}>{member.name}</p>
+                            <p className = {"font-light text-shades-40 text-base text-center"}>{member.position}</p>
+                            <p className = {"font-light text-shades-10 text-base text-center"}>{member.name}</p>
                             <a href = {member.linkedIn}
                                className = {"text-base font-light text-[#6B6B6B]"}>
                                 <img src = {"/common/linkedIn.png"} alt = {"icon"} className = {"w-12"}/>
