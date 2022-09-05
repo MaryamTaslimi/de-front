@@ -45,7 +45,8 @@ export default function Footer() {
                         <a
                             dir = {"ltr"}
                             className = {"text-base font-light text-primary"}
-                            href = {"https://wa.me/09386157570"}
+
+                            href = {"https://wa.me/09358776274"}
                         >۰۹۳۵ ۸۷۷ ۶۲۷۴</a>
                     </div>
                     <div className = {"flex flex-row items-center"}>

@@ -11,7 +11,7 @@ export default function AboutHero() {
                    className = {"flex flex-row items-center"}>
                     <p className = {"text-accent font-light text-2xl"}>دانلود کاتالوگ خانه خلاق و نوآوری دنیای
                         اقتصاد</p>
-                    <img src = {"/about/catalog-download.png"} className = {"w-16 mr-4"}/>
+                    <img src = {"/about/catalog-download.png"} href={"/about/eghtesad.pdf"} className = {"w-16 mr-4"}/>
                 </a>
 
             </div>
