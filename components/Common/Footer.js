@@ -18,11 +18,11 @@ const disableNavigation = [
 ]
 
 const socialMedia = [
-    {name: 'اینستاگرام', href: 'https://instagram.com/deic.vc?igshid=YmMyMTA2M2Y=', src: '/common/instagram.png'},
-    {name: 'لینکدین', href: 'https://www.linkedin.com/in/deic', src: '/common/linkedIn.png'},
-    {name: 'تلگرام', href: 'https://t.me/deicvc', src: '/common/telegram.png'},
-    {name: 'واتساپ', href: 'https://wa.me/09386157570', src: '/common/whatsapp.png'},
-    {name: 'آپارات', href: 'https://www.aparat.com/deic.vc', src: '/common/aparat.png'},
+    {name: 'اینستاگرام', href: 'https://www.instagram.com/vc_deic/?igshid=YmMyMTA2M2Y%3D', src: '/common/instagram.png'},
+    {name: 'لینکدین', href: 'https://www.linkedin.com/company/deic-vc/', src: '/common/linkedIn.png'},
+    {name: 'تلگرام', href: 'https://t.me/deic_vc', src: '/common/telegram.png'},
+    {name: 'واتساپ', href: 'https://wa.me/09358776274', src: '/common/whatsapp.png'},
+    {name: 'آپارات', href: 'https://www.aparat.com/deic_vc', src: '/common/aparat.png'},
 ]
 
 export default function Footer() {
@@ -46,7 +46,7 @@ export default function Footer() {
                             dir = {"ltr"}
                             className = {"text-base font-light text-primary"}
                             href = {"https://wa.me/09386157570"}
-                        >۰۹۳۸ ۶۱۵ ۷۵۷۰</a>
+                        >۰۹۳۵ ۸۷۷ ۶۲۷۴</a>
                     </div>
                     <div className = {"flex flex-row items-center"}>
                         <AlternateEmailSharpIcon className = {"text-primary ml-4"}/>
