@@ -8,9 +8,7 @@ export default function StartupBanner() {
             <div className = {"flex flex-col xl:flex-row items-center xl:items-stretch justify-between font-light gap-12 "}>
                 <img src = {"/startup/startupBanner.png"} className = {"md:w-1/2 h-auto rounded-sm"}/>
                 <div className = {"flex flex-col justify-between grow gap-12 "}>
-                    <p className = {"text-[#E6491E] text-2xl lg:text-4xl text-center"}>خانه خلاق و نوآوری دنیای اقتصاد
-                        برگزار
-                        می‌کند؛<br/></p>
+                    <p className = {"text-[#E6491E] text-2xl lg:text-4xl text-center"}>اعلام اسامی ۱۰ سرمایه‌پذیر برگزیده رویداد معدنکاری دیجیتال<br/></p>
                     <p className = {"text-justify text-base lg:text-2xl text-shades-100"}>
                     اسامی ۱۰ طرح برگزیده شرکت کننده در همایش معدنکاری دیجیتال، ۱۵ شهریور اعلام می‌شود.
                         <br/><br/>به گزارش روزنامه دنیای اقتصاد، غلامحسین محمدی، رئیس خانه خلاق و نوآوری دنیای اقتصاد اعلام کرد: در پی انتشار فراخوان جذب ایده و استارت‌آپ در حوزه معدنکاری دیجیتال، بیش از ۱۰۰ طرح برای دبیرخانه همایش ارسال شد.  
